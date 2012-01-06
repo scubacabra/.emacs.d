@@ -1,0 +1,6 @@
+#name : sub tear_down { ... }
+#group : Test::More::Behaviour
+# --
+sub tear_down {
+$0$<
+}

@@ -1,0 +1,15 @@
+
+;; add jacobo folder to load path
+(add-to-list 'load-path (concat dotfiles-dir  "jacobo"))
+
+;;org stuff
+(require 'jacobo/org)
+;; groovy/grails stuff
+(require 'jacobo/groovy)
+
+;; load up color themes
+(require 'jacobo/color-theme)
+;; Activate theme
+
+(provide 'jacobo)
+;; end of jacobo.el

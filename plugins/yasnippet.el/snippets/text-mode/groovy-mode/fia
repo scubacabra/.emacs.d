@@ -1,0 +1,4 @@
+#name: findAll { ... }
+#group : Iteration.List
+# --
+findAll { $0 }

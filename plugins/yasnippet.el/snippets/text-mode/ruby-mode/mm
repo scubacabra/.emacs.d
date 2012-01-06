@@ -1,0 +1,4 @@
+#name: mock_model(...)
+#group : rspec.mock
+# --
+mock_model(${Cls})

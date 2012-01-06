@@ -1,0 +1,6 @@
+#name : respond to ... end
+#group : control structure
+# --
+respond_to do |format|
+format.${1:html} $0$>
+end

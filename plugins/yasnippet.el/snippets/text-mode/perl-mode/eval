@@ -1,0 +1,9 @@
+#name : eval { ... } if ($@) { ... }
+#group : General
+# --
+eval {
+    ${1:# do something risky...}
+};
+if (\$@) {
+    ${2:# handle failure...}
+}

@@ -1,0 +1,6 @@
+#name : do |obj| ... end
+#group : control structure
+# --
+do |${1:obj}|
+$0$>
+$>end

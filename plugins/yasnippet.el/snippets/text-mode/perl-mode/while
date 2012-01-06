@@ -1,0 +1,6 @@
+#name : while (...) { ... }
+#group : Control Structure
+# --
+while ($1) {
+    $0
+}

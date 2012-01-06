@@ -1,0 +1,4 @@
+#name: it "does something "
+#group : rspec
+# --
+it "${1:does something}"$0

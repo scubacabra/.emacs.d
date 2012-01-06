@@ -1,0 +1,4 @@
+#name: each { ... }
+#group : Iteration.List
+# --
+each { $0 }

@@ -1,0 +1,4 @@
+#name: should be_valid
+#group: rspec.should
+# --
+${1:target}.should be_valid$0

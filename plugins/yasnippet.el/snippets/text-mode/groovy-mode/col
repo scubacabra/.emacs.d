@@ -1,0 +1,4 @@
+#name: collect { ... }
+#group : Iteration.List
+# --
+collect { $0 }
