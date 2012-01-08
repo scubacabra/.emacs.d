@@ -3,11 +3,11 @@
 (add-to-list 'load-path (concat dotfiles-dir  "jacobo"))
 
 ;;org stuff
-(require 'jacobo/org)
+(require 'jacobo/org-mode)
+;; Yasnippets stuff
+(require 'jacobo/yasnippet)
 ;; groovy/grails stuff
 (require 'jacobo/groovy)
-;; yasnippets stuff
-(require 'jacobo/yasnippet)
 ;; load up color themes
 (require 'jacobo/color-theme)
 ;; Activate theme
