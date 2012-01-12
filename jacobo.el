@@ -6,8 +6,10 @@
 (require 'jacobo/org-mode)
 ;; Yasnippets stuff
 (require 'jacobo/yasnippet)
-;; groovy/grails stuff
+;; groovy mode
 (require 'jacobo/groovy)
+;; grails mode
+(require 'jacobo/grails)
 ;; load up color themes
 (require 'jacobo/color-theme)
 ;; Activate theme
