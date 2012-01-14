@@ -1,6 +1,6 @@
 
 ;; add jacobo folder to load path
-(add-to-list 'load-path (concat dotfiles-dir  "jacobo"))
+(add-to-list 'load-path (concat dotfiles-dir  "jacobo/"))
 
 ;;org stuff
 (require 'jacobo/org-mode)
@@ -10,6 +10,8 @@
 (require 'jacobo/groovy)
 ;; grails mode
 (require 'jacobo/grails)
+;;anything mode
+(require 'jacobo/anything-mode)
 ;; load up color themes
 (require 'jacobo/color-theme)
 ;; Activate theme
