@@ -184,13 +184,13 @@
 (defun grails-core-name-for-file (file-name)
   (project-file-basename
    (substring file-name 0
-              (string-match "\\(Service\\.groovy\\|Controller\\.groovy\\|UnitTests?\\.groovy\\|IntegrationTests?\\.groovy\\|Tests?\\.groovy\\|\\.groovy\\)"
+              (string-match "\\(Service\\.groovy\\|Controller\\.groovy\\|UnitTests?\\.groovy\\|IntegrationTests?\\.groovy\\|Tests?\\.groovy\\|Specification\\.groovy\\|\\.groovy\\)"
                             file-name))))
 
 (defun grails-core-name-for-test-file (file-name)
   (project-file-basename
    (substring file-name 0
-              (string-match "\\(UnitTests?\\.groovy\\|IntegrationTests?\\.groovy\\|Tests?\\.groovy\\|\\.groovy\\)"
+              (string-match "\\(UnitTests?\\.groovy\\|IntegrationTests?\\.groovy\\|Tests?\\.groovy\\|Specification\\.groovy\\|\\.groovy\\)"
                             file-name))))
 
 (defun grails-find-domain-for (file-arg)
