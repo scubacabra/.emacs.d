@@ -17,11 +17,12 @@
                     (or (buffer-file-name) load-file-name)))
 (add-to-list 'load-path dotfiles-dir)
 
-;;; load custom modes I like
+;; load custom modes I like
 (require 'load-custom-modes)
-
-;;; load up my cust file to load up everything else
+;; load keybindings
+(require 'key-bindings)
+;; load up my cust file to load up everything else
 (require 'jacobo)
 
 (provide 'init)
-;;; init.el ends here
+;; init.el ends here
