@@ -22,6 +22,8 @@
 (require 'jacobo/anything-mode)
 ;;magit
 (require 'jacobo/magit)
+;; auto-complete
+(require 'jacobo/auto-complete)
 ;; load up color themes
 (require 'jacobo/color-theme)
 ;; Activate theme
