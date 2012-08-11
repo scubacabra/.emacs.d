@@ -113,6 +113,7 @@
 (defun grails-find-unit-test-for-current nil
   (interactive)
   (project-ensure-current)
+  (debug)
   (let ((file (grails-find-test-file-for (buffer-file-name) "unit")))
     (if file
         (find-file file)
@@ -121,6 +122,7 @@
 (defun grails-find-integration-test-for-current nil
   (interactive)
   (project-ensure-current)
+  (debug)
   (let ((file (grails-find-test-file-for (buffer-file-name) "integration")))
     (if file
         (find-file file)
@@ -182,15 +184,17 @@
   (project-file-basename (substring file-name 0 (string-match "Tests?\\." file-name))))
 
 (defun grails-core-name-for-file (file-name)
-  (project-file-basename
-   (substring file-name 0
-              (string-match "\\(Service\\.groovy\\|Controller\\.groovy\\|UnitTests?\\.groovy\\|IntegrationTests?\\.groovy\\|Tests?\\.groovy\\|Specification\\.groovy\\|\\.groovy\\)"
-                            file-name))))
+  (let ((grails-file (substring file-name 0
+				(string-match "\\(Service\\.groovy\\|Controller\\.groovy\\|UnitTests?\\.groovy\\|IntegrationTests?\\.groovy\\|Tests?\\.groovy\\|Spec\\.groovy\\|Specification\\.groovy\\|\\.groovy\\)"
+					      file-name))))
+	 (if (equal (string-match "[^/\\\\]+$" grails-file) 'nil)
+	     (setq grails-file file-name)
+	 (project-file-basename grails-file))))
 
 (defun grails-core-name-for-test-file (file-name)
   (project-file-basename
    (substring file-name 0
-              (string-match "\\(UnitTests?\\.groovy\\|IntegrationTests?\\.groovy\\|Tests?\\.groovy\\|Specification\\.groovy\\|\\.groovy\\)"
+              (string-match "\\(UnitTests?\\.groovy\\|IntegrationTests?\\.groovy\\|Tests?\\.groovy\\|Spec\\.groovy\\|Specification\\.groovy\\|\\.groovy\\)"
                             file-name))))
 
 (defun grails-find-domain-for (file-arg)
@@ -215,7 +219,7 @@
   (let ((core-name (grails-core-name-for-test-file file-arg)))
     (dolist (file (project-path-cache-get (project-current)))
       (when (and (string-equal core-name (grails-core-name-for-file file))
-                 (project-dir-in-file-path-p file test-phase))
+		 (project-dir-in-file-path-p file test-phase))
         (message (concat "Found " test-phase " test file '" (project-file-basename file)
                          "' for '" (project-file-basename file-arg) "'"))
         (return file)))))
