@@ -113,7 +113,6 @@
 (defun grails-find-unit-test-for-current nil
   (interactive)
   (project-ensure-current)
-  (debug)
   (let ((file (grails-find-test-file-for (buffer-file-name) "unit")))
     (if file
         (find-file file)
@@ -122,7 +121,6 @@
 (defun grails-find-integration-test-for-current nil
   (interactive)
   (project-ensure-current)
-  (debug)
   (let ((file (grails-find-test-file-for (buffer-file-name) "integration")))
     (if file
         (find-file file)
