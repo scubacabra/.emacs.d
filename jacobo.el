@@ -16,7 +16,7 @@
 ;;     (setq path (concat cur_path ":/usr/local/bin"))
 ;;   (setenv "PATH" path))
 
-;;org stuff
+;; org stuff
 (require 'jacobo/org-mode)
 ;; Yasnippets stuff
 (require 'jacobo/yasnippet)
@@ -26,9 +26,9 @@
 (require 'jacobo/groovy)
 ;; grails mode
 (require 'jacobo/grails)
-;;anything mode
+;; anything mode
 (require 'jacobo/anything-mode)
-;;magit
+;; magit
 (require 'jacobo/magit)
 ;; auto-complete
 (require 'jacobo/auto-complete)
