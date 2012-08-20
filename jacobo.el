@@ -10,10 +10,18 @@
 (make-directory "~/.emacs.d/autosaves/" t)
 (make-directory "~/.emacs.d/backups/" t)
 
+;; os specific stuff
+;; (setq cur_path (getenv "PATH")) ; get current path to append on
+;; (if (eq system-type 'darwin) 
+;;     (setq path (concat cur_path ":/usr/local/bin"))
+;;   (setenv "PATH" path))
+
 ;;org stuff
 (require 'jacobo/org-mode)
 ;; Yasnippets stuff
 (require 'jacobo/yasnippet)
+;; expand-region
+(require 'jacobo/expand-region)
 ;; groovy mode
 (require 'jacobo/groovy)
 ;; grails mode
