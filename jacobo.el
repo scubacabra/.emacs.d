@@ -32,6 +32,8 @@
 (require 'jacobo/magit)
 ;; auto-complete
 (require 'jacobo/auto-complete)
+;; ace-jump mode
+(require 'jacobo/ace-jump-mode)
 ;; load up color themes
 (require 'jacobo/color-theme)
 ;; Activate theme
