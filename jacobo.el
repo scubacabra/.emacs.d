@@ -34,6 +34,8 @@
 (require 'jacobo/auto-complete)
 ;; ace-jump mode
 (require 'jacobo/ace-jump-mode)
+;; mark-multiple
+(require 'jacobo/mark-multiple.el)
 ;; load up color themes
 (require 'jacobo/color-theme)
 ;; Activate theme
