@@ -1,5 +1,3 @@
-(add-to-list 'load-path (concat dotfiles-dir "plugins/mark-multiple.el"))
-
 (require 'inline-string-rectangle)
 (global-set-key (kbd "C-x r t") 'inline-string-rectangle)
 

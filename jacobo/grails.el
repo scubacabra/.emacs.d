@@ -1,4 +1,3 @@
-(add-to-list 'load-path (concat dotfiles-dir "plugins/grails"))
 ;;depends on project-mode
 (require 'jacobo/project-mode-customization)
 (require 'grails-mode)

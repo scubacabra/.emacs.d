@@ -1,10 +1,7 @@
-(add-to-list 'load-path (concat dotfiles-dir "plugins/auto-complete"))
-
 ;;add popup it depends on it
-(add-to-list 'load-path (concat dotfiles-dir "plugins/popup-el"))
+;;(add-to-list 'load-path (concat dotfiles-dir "plugins/popup-el"))
 ;; add fuzzy it depends on it
-(add-to-list 'load-path (concat dotfiles-dir "plugins/fuzzy-el"))
-
+;;(add-to-list 'load-path (concat dotfiles-dir "plugins/fuzzy-el"))
 
 (require 'auto-complete-config)
 (ac-config-default)

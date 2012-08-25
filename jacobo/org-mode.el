@@ -1,4 +1,3 @@
-
 ;; open files with this extension in org-mode
 (add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
 

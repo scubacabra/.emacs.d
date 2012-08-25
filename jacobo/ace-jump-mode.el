@@ -1,5 +1,3 @@
-(add-to-list 'load-path (concat dotfiles-dir "plugins/ace-jump-mode"))
-
 (autoload
   'ace-jump-mode
   "ace-jump-mode"
