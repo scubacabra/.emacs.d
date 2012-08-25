@@ -28,6 +28,8 @@
 (require 'jacobo/multiple-cursors)
 ;; feature-mode
 (require 'jacobo/feature-mode)
+;; markdown mode
+(require 'jacobo/markdown-mode)
 
 (provide 'jacobo)
 ;; end of jacobo.el
