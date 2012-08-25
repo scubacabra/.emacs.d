@@ -16,6 +16,7 @@
 ;; setup path to dependencies
 (setq jacobo (expand-file-name "jacobo" dotfiles-dir))
 (setq plugins (expand-file-name "plugins" dotfiles-dir))
+(setq defuns-dir (expand-file-name "defuns" dotfiles-dir))
 
 ;; set up load path
 (add-to-list 'load-path dotfiles-dir)
@@ -26,6 +27,11 @@
 (dolist (project (directory-files plugins t "\\w+"))
   (when (file-directory-p project)
     (add-to-list 'load-path project)))
+
+;; add defuns in external library in
+(dolist (file (directory-files defuns-dir t "\\w+"))
+  (when (file-regular-p file)
+    (load file)))
 
 ;; write backup files to own directory
 (setq backup-directory-alist `(("." . ,(expand-file-name
