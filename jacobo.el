@@ -1,10 +1,11 @@
-
 ;; org stuff
 (require 'jacobo/org-mode)
 ;; Yasnippets stuff
 (require 'jacobo/yasnippet)
 ;; expand-region
 (require 'jacobo/expand-region)
+;; smart-forward
+(require 'jacobo/smart-forward)
 ;; groovy mode
 (require 'jacobo/groovy)
 ;; grails mode
@@ -23,6 +24,8 @@
 (require 'jacobo/browse-kill-ring)
 ;; smex
 (require 'jacobo/smex)
+;; multiple cursors
+(require 'jacobo/multiple-cursors)
 
 (provide 'jacobo)
 ;; end of jacobo.el
