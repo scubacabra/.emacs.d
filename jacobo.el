@@ -26,6 +26,8 @@
 (require 'jacobo/smex)
 ;; multiple cursors
 (require 'jacobo/multiple-cursors)
+;; feature-mode
+(require 'jacobo/feature-mode)
 
 (provide 'jacobo)
 ;; end of jacobo.el
