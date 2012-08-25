@@ -1,0 +1,19 @@
+
+** TODO do the whole eval-after-load stuff for certain modes like grails etc.
+
+** TODO bash completion
+
+** DONE multiple cursors
+   CLOSED: [2012-08-24 Fri 20:59]
+
+** TODO gradle and wsdl yasnippets
+
+** DONE add anything officially
+   CLOSED: [2012-08-24 Fri 21:10]
+
+** DONE smart-forward order after expand region
+   CLOSED: [2012-08-24 Fri 20:38]
+
+** TODO Customize this color theme, varying fon't sizes?
+
+** TODO yasnippets redo add custom snippets to different dir
