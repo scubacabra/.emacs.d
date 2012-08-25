@@ -17,3 +17,5 @@
 ** TODO Customize this color theme, varying fon't sizes?
 
 ** TODO yasnippets redo add custom snippets to different dir
+** DONE Feature Mode
+   CLOSED: [2012-08-24 Fri 21:22]
