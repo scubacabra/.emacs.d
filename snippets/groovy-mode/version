@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: version
+# key: ver
+# group: gradle
+# --
+version = '${1:number}'

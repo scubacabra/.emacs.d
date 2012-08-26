@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: dependencies
+# key: dep
+# group: gradle
+# --
+dependencies {
+$0
+}

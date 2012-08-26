@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: compile_project
+# key: comp
+# group: gradle
+# --
+compile project(:"${1:project-path}")

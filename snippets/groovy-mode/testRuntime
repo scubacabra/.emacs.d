@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: testRuntime
+# key: tr
+# group: gradle
+# --
+testRuntime '${1:mavenRepo}'

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: dependsOn
+# key: do
+# group: gradle
+# --
+${1:task}.dependsOn ${2:otherTask}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: task
+# key: t
+# group: gradle
+# --
+task ${1:sometask}($2) {
+$0
+}

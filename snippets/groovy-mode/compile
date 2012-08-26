@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: compile
+# key: com
+# group: gradle
+# --
+compile '${1:mavenrepo}'

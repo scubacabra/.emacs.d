@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: sourceCompatibility
+# key: sc
+# group: gradle
+# --
+sourceCompatibility = ${1:1234}

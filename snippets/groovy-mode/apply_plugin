@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: apply_plugin
+# key: ap
+# group: gradle
+# --
+apply plugin: '${1:plugin}'

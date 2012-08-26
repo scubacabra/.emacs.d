@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: testCompile
+# key: tc
+# group: gradle
+# --
+testCompile '${1:mavenrepo}'

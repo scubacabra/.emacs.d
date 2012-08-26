@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: mavenCentral
+# key: mc
+# group: gradle
+# --
+mavenCentral()

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: runtime
+# key: rt
+# group: gradle
+# --
+runtime 'mavenrepo$0'
