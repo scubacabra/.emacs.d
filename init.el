@@ -34,8 +34,8 @@
     (load file)))
 
 ;; write backup files to own directory
-(setq backup-directory-alist `(("." . ,(expand-file-name
-                                        (concat dotfiles-dir "backups")))))
+(setq backup-directory-alist `(("." . ,(expand-file-name 
+					"backups" dotfiles-dir))))
 
 ;; is this on a mac??
 (setq is-mac (equal system-type 'darwin))

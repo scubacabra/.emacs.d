@@ -4,7 +4,7 @@
 ;; key bindings
 (global-set-key (kbd "C-c C-o l") 'org-store-link)
 (global-set-key (kbd "C-c C-o c") 'org-capture)
-(global-set-key (kbd "C-c C-c a") 'org-agenda)
+(global-set-key (kbd "C-c C-o a") 'org-agenda)
 (global-set-key (kbd "C-c C-o b") 'org-iswitchb)
 
 (setq org-log-done t)

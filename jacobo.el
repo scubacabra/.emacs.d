@@ -1,5 +1,5 @@
 ;; org stuff
-(require 'jacobo/org-mode)
+(eval-after-load "org" '(require 'jacobo/org-mode))
 ;; Yasnippets stuff
 (require 'jacobo/yasnippet)
 ;; expand-region
@@ -8,6 +8,8 @@
 (require 'jacobo/smart-forward)
 ;; groovy mode
 (require 'jacobo/groovy)
+;; project-mode
+(require 'jacobo/project-mode-customization)
 ;; grails mode
 (require 'jacobo/grails)
 ;; anything mode
