@@ -1,6 +1,9 @@
 (require 'yasnippet)
 
-(yas/initialize)
-(yas/load-directory (concat dotfiles-dir "plugins/yasnippet.el/snippets"))
+(yas-global-mode 1)
+(setq yas-snippet-dirs
+      '("~/.emacs.d/snippets"            ;; personal snippets
+;;        "~/.emacs.d/plugins/yasnippet/snippets"    ;; the default collection
+        ))
 
 (provide 'jacobo/yasnippet)

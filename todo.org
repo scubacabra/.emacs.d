@@ -16,6 +16,8 @@
 
 ** TODO Customize this color theme, varying fon't sizes?
 
-** TODO yasnippets redo add custom snippets to different dir
+** DONE yasnippets redo add custom snippets to different dir
+   CLOSED: [2012-08-26 Sun 14:05]
 ** DONE Feature Mode
    CLOSED: [2012-08-24 Fri 21:22]
+** TODO do a toggle between multiple windows and a single window [here][http://thornydev.blogspot.com/2012/08/happiness-is-emacs-trifecta.html]
