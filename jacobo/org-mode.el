@@ -2,10 +2,11 @@
 (add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
 
 ;; key bindings
-(global-set-key "\C-cl" 'org-store-link)
-(global-set-key "\C-cc" 'org-capture)
-(global-set-key "\C-ca" 'org-agenda)
-(global-set-key "\C-cb" 'org-iswitchb)
+(global-set-key (kbd "C-c C-o l") 'org-store-link)
+(global-set-key (kbd "C-c C-o c") 'org-capture)
+(global-set-key (kbd "C-c C-c a") 'org-agenda)
+(global-set-key (kbd "C-c C-o b") 'org-iswitchb)
+
 (setq org-log-done t)
 ;; hopefully this stuff works. like the idea of images in this
 (add-hook 'org-mode-hook
