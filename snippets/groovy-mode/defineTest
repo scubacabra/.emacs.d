@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: defineTest
+# key: dt
+# group: spock
+# --
+def "${1:new test}" () {
+$0
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: allprojects
+# key: allp	
+# group: gradle
+# --
+allprojects {
+$0
+}

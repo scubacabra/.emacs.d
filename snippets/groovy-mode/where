@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: where
+# key: wh
+# group: spock
+# --
+where:
+$0

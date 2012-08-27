@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: then
+# key: then
+# group: gradle
+# --
+then:
+$0

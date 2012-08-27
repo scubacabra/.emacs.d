@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: subproject
+# key: sp
+# group: gradle
+# --
+subprojects {
+$0
+}

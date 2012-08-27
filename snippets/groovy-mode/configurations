@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: confiugrations
+# key: conf
+# group: gradle
+# --
+configurations {
+$0
+}

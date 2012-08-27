@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: when
+# key: w
+# group: spock
+# --
+when:
+$0
