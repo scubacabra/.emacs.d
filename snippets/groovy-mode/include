@@ -1,6 +1,0 @@
-# -*- mode: snippet -*-
-# name: include
-# key: inc
-# group: gradle
-# --
-include '${1:includeMe}'
