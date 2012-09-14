@@ -8,12 +8,16 @@
 (require 'jacobo/smart-forward)
 ;; groovy mode
 (require 'jacobo/groovy)
+;; projectile mode
+(require 'jacobo/projectile)
 ;; project-mode
 (require 'jacobo/project-mode-customization)
 ;; grails mode
 (require 'jacobo/grails)
 ;; anything mode
 (require 'jacobo/anything-mode)
+;; helm mode --> will replace anything eventually
+(require 'jacobo/helm-mode)
 ;; magit
 (require 'jacobo/magit)
 ;; auto-complete
