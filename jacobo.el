@@ -8,6 +8,8 @@
 (require 'jacobo/smart-forward)
 ;; groovy mode
 (require 'jacobo/groovy)
+;; projectile mode
+(require 'jacobo/projectile)
 ;; project-mode
 (require 'jacobo/project-mode-customization)
 ;; grails mode
