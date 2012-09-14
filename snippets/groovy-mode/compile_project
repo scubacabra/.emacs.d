@@ -3,4 +3,4 @@
 # key: comp
 # group: gradle
 # --
-compile project(:"${1:project-path}")
+compile project(':${1:project-path}')

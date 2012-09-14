@@ -36,6 +36,8 @@
 (require 'jacobo/feature-mode)
 ;; markdown mode
 (require 'jacobo/markdown-mode)
+;; dired setup
+(eval-after-load 'dired '(require 'jacobo/dired))
 
 (provide 'jacobo)
 ;; end of jacobo.el
