@@ -8,6 +8,8 @@
 (global-set-key (kbd "C-c C-o b") 'org-iswitchb)
 
 (setq org-log-done t)
+(setq org-agenda-files (list "~/dev/GBIAMD/gradle-migrate/gradle-todo.org"))
+
 ;; hopefully this stuff works. like the idea of images in this
 (add-hook 'org-mode-hook
 	  (lambda ()
