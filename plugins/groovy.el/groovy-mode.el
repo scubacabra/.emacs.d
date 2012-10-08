@@ -1,9 +1,12 @@
 ;;; groovy-mode.el --- Groovy mode derived mode
 
-;;  Author: Russel Winder <russel@russel.org.uk>
+;;  Author: Russel Winder <russel@winder.org.uk>
 ;;  Created: 2006-08-01
+;;  Version: 201203310931
 
-;;  Copyright (C) 2006,2009 Russel Winder
+;;;; NB Version number is date and time yyyymmddhhMM in GMT (aka UTC).
+
+;;  Copyright (C) 2006,2009-10,2012 Russel Winder
 
 ;;  This program is free software; you can redistribute it and/or modify it under the terms of the GNU
 ;;  General Public License as published by the Free Software Foundation; either version 2 of the License, or
@@ -18,8 +21,8 @@
 
 ;;; Authors:
 ;;
-;;  Russel Winder <russel.winder@concertant.com>, 2006--
-;;  Jim Morris, 2009--
+;;  Russel Winder <russel@winder.org.uk>, 2006--
+;;  Jim Morris <morris@wolfman.com>, 2009--
 
 ;;; Commentary:
 ;;
@@ -54,17 +57,12 @@
 ;;
 ;;  Should we support GString / template markup ( e.g. `<%' and `%>') specially?
 ;;
-;;  Need to support square bracket indenting for list literals.
-;;
 ;;  Need to think whether Groovy needs a different c-decl-prefix-re compared to Java.  Certainly, Java will
 ;;  have to change to handle the generics.
 ;;
 ;;  Probably need to change `c-block-prefix-disallowed-chars' as Groovy is not the same as Java.
 ;;
 ;;  Probably need to change `c-type-decl-suffix-key' as Groovy is not the same as Java.
-;;
-;;  Need to sort out the closures as blocks -- there is no keyword to use to start these the prefix is one
-;;  of: function call, field reference, or assignment.
 
 ;;;  Changes:
 ;;
@@ -261,7 +259,7 @@ since CC Mode treats every identifier as an expression."
         nil
       (backward-char 1)
       (or
-       (not (looking-at "[=+*%<]"))
+       (not (looking-at "[=+*%<{:]"))
        (if (char-equal (char-after) ?>)
            (if (equal (point) (point-min))
                nil
@@ -404,9 +402,11 @@ need for `java-font-lock-extra-types'.")
 ;                (cons "Groovy" (c-lang-const c-mode-menu groovy)))
 
 ;;; Autoload mode trigger
-;(add-to-list 'auto-mode-alist '("\\.groovy" . groovy-mode))
+;;;###autoload
+(add-to-list 'auto-mode-alist '("\\.groovy$" . groovy-mode))
 
 ;; Custom variables
+;;;###autoload
 (defcustom groovy-mode-hook nil
   "*Hook called by `groovy-mode'."
   :type 'hook
@@ -415,18 +415,16 @@ need for `java-font-lock-extra-types'.")
 
 ;;; The following are used to overide cc-mode indentation behavior to match groovy
 
-;; if we are in a brace-list-entry (which in groovy is probably a
-;; closure) and fist list entry ends with -> (excluding comment) then
+;; if we are in a closure that has an argument eg ends with -> (excluding comment) then
 ;; change indent else lineup with previous one
-(defun groovy-mode-fix-brace-list (langelem)
-  (save-excursion
-    (let* ((ankpos (cdr langelem)) ; position of anchor element
-           (curcol (progn (goto-char ankpos)
-                          (current-indentation))))
-      (if (search-forward "->" (c-point 'eol) t)      ; if the line has a -> in it 
-          (vector (+ curcol c-basic-offset))          ; then indent from base
-        0))
-    ))
+(defun groovy-mode-fix-closure-with-argument (langelem)
+  (save-excursion 
+	(back-to-indentation)	
+	(c-backward-syntactic-ws)
+	(backward-char 2)
+	(if (looking-at "->")                                  ; if the line has a -> in it 
+		(vector (+ (current-indentation) c-basic-offset))  ; then indent from base
+	  0)))
 
 ;; A helper function from: http://mihai.bazon.net/projects/emacs-javascript-mode/javascript.el
 ;; Originally named js-lineup-arglist, renamed to groovy-lineup-arglist
@@ -450,33 +448,41 @@ need for `java-font-lock-extra-types'.")
           (skip-chars-forward " \t"))
         (vector (current-column))))))
 
-;; use defadvice to override the syntactic type
-;; if we have a statement-cont, see if previous line has a virtual semicolon and if so make it statement
+(defun is-groovy-mode ()
+  "return t if we are in groovy mode else nil"
+  (eq major-mode 'groovy-mode))
+
+;; use defadvice to override the syntactic type if we have a
+;; statement-cont, see if previous line has a virtual semicolon and if
+;; so make it statement.
 (defadvice c-guess-basic-syntax (after c-guess-basic-syntax-groovy activate)
-  (save-excursion
-	(let* ((ankpos (progn 
-					 (beginning-of-line)
-					 (c-backward-syntactic-ws)
-					 (beginning-of-line)
-					 (c-forward-syntactic-ws)
-					 (point))) ; position to previous non-blank line
-		   (curelem (c-langelem-sym (car ad-return-value))))
-	  (end-of-line)
-	  (cond ((eq 'statement-cont curelem)
-			 (when (groovy-at-vsemi-p) ; if there is a virtual semi there then make it a statement
-			   (setq ad-return-value `((statement ,ankpos)))))
+  (when (is-groovy-mode)
+	(save-excursion
+	  (let* ((ankpos (progn 
+					   (beginning-of-line)
+					   (c-backward-syntactic-ws)
+					   (beginning-of-line)
+					   (c-forward-syntactic-ws)
+					   (point))) ; position to previous non-blank line
+			 (curelem (c-langelem-sym (car ad-return-value))))
+		(end-of-line)
+		(cond
+		 ((eq 'statement-cont curelem)
+		  (when (groovy-at-vsemi-p) ; if there is a virtual semi there then make it a statement
+			(setq ad-return-value `((statement ,ankpos)))))
+		 
+		 ((eq 'topmost-intro-cont curelem)
+		  (when (groovy-at-vsemi-p) ; if there is a virtual semi there then make it a top-most-intro
+			(setq ad-return-value `((topmost-intro ,ankpos)))))
+		
+		 )))))
 
-			((eq 'topmost-intro-cont curelem)
-			 (when (groovy-at-vsemi-p) ; if there is a virtual semi there then make it a top-most-intro
-			   (setq ad-return-value `((topmost-intro ,ankpos)))))))))
-
-;; sometimes a closing brace is mistaken for a statement, fix it
-(defun groovy-mode-fix-statement (langelem)
-  (save-excursion
-	(back-to-indentation)
-	(if (looking-at "}")      ; if it is }
-		'-          ; then de-indent from base
-	  0)))
+;; This disables bracelists, as most of the time in groovy they are closures
+;; We need to check we are currently in groovy mode
+(defadvice c-inside-bracelist-p (around groovy-c-inside-bracelist-p activate)
+  (if (not (is-groovy-mode))
+	  ad-do-it
+ 	(setq ad-return-value nil)))
 
 
 ;; based on java-function-regexp
@@ -539,6 +545,7 @@ need for `java-font-lock-extra-types'.")
   "Imenu generic expression for Groovy mode.  See `imenu-generic-expression'.")
 
 ;;; The entry point into the mode
+;;;###autoload
 (defun groovy-mode ()
   "Major mode for editing Groovy code.
 
@@ -566,10 +573,7 @@ Key bindings:
   (setq c-label-minimum-indentation 0)
 
   ;; fix for indentation after a closure param list
-  (c-set-offset 'brace-list-entry 'groovy-mode-fix-brace-list)
-  
-  ;; fix for } after a fixed continuation
-  (c-set-offset 'statement 'groovy-mode-fix-statement)
+  (c-set-offset 'statement 'groovy-mode-fix-closure-with-argument)
 
   ;; get arglists (in groovy lists or maps) to align properly
   (c-set-offset 'arglist-close '(c-lineup-close-paren))
@@ -579,6 +583,8 @@ Key bindings:
 
   (c-update-modeline))
 
+;;;###autoload
+(add-to-list 'interpreter-mode-alist '("groovy" . groovy-mode))
 
 (provide 'groovy-mode)
 
