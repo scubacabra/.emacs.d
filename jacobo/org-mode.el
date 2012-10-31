@@ -2,12 +2,14 @@
 (add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
 
 ;; key bindings
-(global-set-key (kbd "C-c C-o l") 'org-store-link)
-(global-set-key (kbd "C-c C-o c") 'org-capture)
-(global-set-key (kbd "C-c C-o a") 'org-agenda)
-(global-set-key (kbd "C-c C-o b") 'org-iswitchb)
+(global-set-key (kbd "C-c l") 'org-store-link)
+(global-set-key (kbd "C-c M-c") 'org-capture)
+(global-set-key (kbd "C-c C-a") 'org-agenda)
+(global-set-key (kbd "C-c M-b") 'org-iswitchb)
 
 (setq org-log-done t)
+(setq org-agenda-files (list "~/.emacs.d/todo.org"))
+
 ;; hopefully this stuff works. like the idea of images in this
 (add-hook 'org-mode-hook
 	  (lambda ()
