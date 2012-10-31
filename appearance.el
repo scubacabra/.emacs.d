@@ -45,4 +45,7 @@
 ;; Make zooming affect frame instead of buffers TODO
 ;;(require 'zoom-frm)
 
+;; Make ediff default to in frame ediff not new frame
+(setq ediff-window-setup-function 'ediff-setup-windows-plain)
+
 (provide 'appearance)
