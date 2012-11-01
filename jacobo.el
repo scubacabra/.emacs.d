@@ -1,3 +1,5 @@
+;;ibuffer setup
+(require 'jacobo/ibuffer-setup)
 ;; org stuff
 (eval-after-load "org" '(require 'jacobo/org-mode))
 ;; Yasnippets stuff
@@ -36,6 +38,10 @@
 (require 'jacobo/feature-mode)
 ;; markdown mode
 (require 'jacobo/markdown-mode)
+;; zoom-frm
+(require 'jacobo/zoom-frm)
+;; doc-mode
+(require 'jacobo/doc-mode)
 
 (provide 'jacobo)
 ;; end of jacobo.el

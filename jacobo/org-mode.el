@@ -8,6 +8,7 @@
 (global-set-key (kbd "C-c M-b") 'org-iswitchb)
 
 (setq org-log-done t)
+
 (setq org-agenda-files (list "~/.emacs.d/todo.org"))
 
 ;; hopefully this stuff works. like the idea of images in this

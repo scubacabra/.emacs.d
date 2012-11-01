@@ -1,8 +1,0 @@
-# -*- mode: snippet -*-
-# name: doFirst
-# key: dF
-# group: gradle
-# --
-${1:task}.doFirst {
-$0
-}
