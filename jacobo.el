@@ -1,3 +1,5 @@
+;;ibuffer setup
+(require 'jacobo/ibuffer-setup)
 ;; org stuff
 (eval-after-load "org" '(require 'jacobo/org-mode))
 ;; Yasnippets stuff
