@@ -38,7 +38,7 @@
 					"backups" dotfiles-dir))))
 ;; write autosave to their own dir also
 (setq auto-save-file-name-transforms `((".*" ,
-					(expand-file-name "autosaves" dotfiles-dir) t)))
+					(expand-file-name "autosaves" dotfiles-dir))))
 
 ;; is this on a mac??
 (setq is-mac (equal system-type 'darwin))

@@ -42,6 +42,8 @@
 (require 'jacobo/zoom-frm)
 ;; doc-mode
 (require 'jacobo/doc-mode)
+;; spock-mode
+(require 'spock-mode)
 
 (provide 'jacobo)
 ;; end of jacobo.el
