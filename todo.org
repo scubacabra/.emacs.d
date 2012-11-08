@@ -20,4 +20,9 @@
    CLOSED: [2012-08-26 Sun 14:05]
 ** DONE Feature Mode
    CLOSED: [2012-08-24 Fri 21:22]
-** TODO do a toggle between multiple windows and a single window [here][http://thornydev.blogspot.com/2012/08/happiness-is-emacs-trifecta.html]
+** TODO do a toggle between multiple windows and a single window [[http://thornydev.blogspot.com/2012/08/happiness-is-emacs-trifecta.html][here]]
+** TODO Learn emacs grep
+** TODO Install zoom-frm
+** TODO install dired-details and dired=details+
+** TODO Put groovy-mode as a repo on my git
+** TODO check out eproject
