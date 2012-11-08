@@ -6,8 +6,8 @@
 ** DONE multiple cursors
    CLOSED: [2012-08-24 Fri 20:59]
 
-** TODO gradle and wsdl yasnippets
-
+** DONE gradle and wsdl yasnippets
+   CLOSED: [2012-11-08 Thu 12:12]
 ** DONE add anything officially
    CLOSED: [2012-08-24 Fri 21:10]
 
@@ -22,7 +22,9 @@
    CLOSED: [2012-08-24 Fri 21:22]
 ** TODO do a toggle between multiple windows and a single window [[http://thornydev.blogspot.com/2012/08/happiness-is-emacs-trifecta.html][here]]
 ** TODO Learn emacs grep
-** TODO Install zoom-frm
+** DONE Install zoom-frm
+   CLOSED: [2012-11-08 Thu 12:12]
 ** TODO install dired-details and dired=details+
-** TODO Put groovy-mode as a repo on my git
+** DONE Put groovy-mode as a repo on my git
+   CLOSED: [2012-11-08 Thu 12:12]
 ** TODO check out eproject

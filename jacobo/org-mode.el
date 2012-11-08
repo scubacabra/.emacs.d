@@ -35,4 +35,9 @@
       (set-face-underline-p 'org-link t))
   (iimage-mode))
 
+
+;; org-bullets
+(require 'org-bullets)
+(add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
+
 (provide 'jacobo/org-mode)
