@@ -1,0 +1,6 @@
+[submodule "plugins/frame-cmds"]
+	path = plugins/frame-cmds
+	url = https://github.com/emacsmirror/frame-cmds.git
+[submodule "plugins/frame-fns"]
+	path = plugins/frame-fns
+	url = https://github.com/emacsmirror/frame-fns.git
