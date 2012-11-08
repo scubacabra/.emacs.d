@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: define_webjump
+# key: dw
+# group: conkeror
+# --
+define_webjump("$0", "$1");
