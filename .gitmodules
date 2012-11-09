@@ -7,3 +7,6 @@
 [submodule "plugins/org-bullets"]
 	path = plugins/org-bullets
 	url = git://github.com/sabof/org-bullets.git
+[submodule "plugins/stripe-buffer"]
+	path = plugins/stripe-buffer
+	url = git://github.com/sabof/stripe-buffer.git
