@@ -44,6 +44,8 @@
 (require 'jacobo/doc-mode)
 ;; spock-mode
 (require 'spock-mode)
+;; nxml mode configuration
+(require 'jacobo/xml-setup)
 
 (provide 'jacobo)
 ;; end of jacobo.el
