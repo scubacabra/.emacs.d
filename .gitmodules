@@ -10,3 +10,6 @@
 [submodule "plugins/stripe-buffer"]
 	path = plugins/stripe-buffer
 	url = git://github.com/sabof/stripe-buffer.git
+[submodule "plugins/dired-details"]
+	path = plugins/dired-details
+	url = git://github.com/emacsmirror/dired-details.git
