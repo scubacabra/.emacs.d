@@ -46,6 +46,8 @@
 (require 'spock-mode)
 ;; nxml mode configuration
 (require 'jacobo/xml-setup)
+;; stripe-buffer prettify lists
+(require 'jacobo/stripe-buffer-setup)
 
 (provide 'jacobo)
 ;; end of jacobo.el
