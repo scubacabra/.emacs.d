@@ -48,6 +48,8 @@
 (require 'jacobo/xml-setup)
 ;; stripe-buffer prettify lists
 (require 'jacobo/stripe-buffer-setup)
+;; dired-details
+(require 'jacobo/dired-setup)
 
 (provide 'jacobo)
 ;; end of jacobo.el
