@@ -22,6 +22,8 @@
 (require 'jacobo/helm-mode)
 ;; magit
 (require 'jacobo/magit)
+;; helm git
+(require 'helm-git)
 ;; auto-complete
 (require 'jacobo/auto-complete)
 ;; ace-jump mode

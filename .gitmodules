@@ -13,3 +13,6 @@
 [submodule "plugins/dired-details"]
 	path = plugins/dired-details
 	url = git://github.com/emacsmirror/dired-details.git
+[submodule "plugins/helm-git"]
+	path = plugins/helm-git
+	url = git@github.com:maio/helm-git.git
