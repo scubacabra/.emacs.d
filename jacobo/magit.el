@@ -63,4 +63,7 @@
 
 (define-key magit-status-mode-map (kbd "W") 'magit-toggle-whitespace)
 
+;; magit add remote
+(define-key magit-status-mode-map (kbd "C-x ar") 'magit-add-remote)
+
 (provide 'jacobo/magit)
