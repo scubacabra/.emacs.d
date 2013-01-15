@@ -16,3 +16,6 @@
 [submodule "plugins/helm-git"]
 	path = plugins/helm-git
 	url = git@github.com:maio/helm-git.git
+[submodule "plugins/gist.el"]
+	path = plugins/gist.el
+	url = git@github.com:defunkt/gist.el.git
