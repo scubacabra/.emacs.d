@@ -19,3 +19,12 @@
 [submodule "plugins/gist.el"]
 	path = plugins/gist.el
 	url = git@github.com:defunkt/gist.el.git
+[submodule "plugins/pcache"]
+	path = plugins/pcache
+	url = git@github.com:sigma/pcache.git
+[submodule "plugins/logito"]
+	path = plugins/logito
+	url = git@github.com:sigma/logito.git
+[submodule "plugins/gh.el"]
+	path = plugins/gh.el
+	url = git@github.com:sigma/gh.el.git
