@@ -1,0 +1,8 @@
+# name: xsd
+# --
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema targetNamespace="${1:tns}"
+	    xmlns:tns="$1"
+	    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  $0
+</xsd:schema>
