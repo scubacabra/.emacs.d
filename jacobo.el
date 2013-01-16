@@ -52,6 +52,8 @@
 (require 'jacobo/stripe-buffer-setup)
 ;; dired-details
 (require 'jacobo/dired-setup)
+;; gist
+(require 'jacobo/gist)
 
 (provide 'jacobo)
 ;; end of jacobo.el
