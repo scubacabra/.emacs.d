@@ -10,6 +10,8 @@
 (require 'jacobo/smart-forward)
 ;; groovy mode
 (require 'jacobo/groovy)
+;; java-mode plus
+(require 'jacobo/java-mode)
 ;; projectile mode
 (require 'jacobo/projectile)
 ;; project-mode
