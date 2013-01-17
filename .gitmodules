@@ -31,3 +31,6 @@
 [submodule "plugins/java-mode-plus"]
 	path = plugins/java-mode-plus
 	url = git@github.com:djmijares/java-mode-plus.git
+[submodule "plugins/groovy-mode-plus"]
+	path = plugins/groovy-mode-plus
+	url = git@github.com:djmijares/groovy-mode-plus.git
