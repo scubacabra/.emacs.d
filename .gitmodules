@@ -28,3 +28,6 @@
 [submodule "plugins/gh.el"]
 	path = plugins/gh.el
 	url = git@github.com:sigma/gh.el.git
+[submodule "plugins/java-mode-plus"]
+	path = plugins/java-mode-plus
+	url = git@github.com:djmijares/java-mode-plus.git
