@@ -34,3 +34,6 @@
 [submodule "plugins/groovy-mode-plus"]
 	path = plugins/groovy-mode-plus
 	url = git@github.com:djmijares/groovy-mode-plus.git
+[submodule "plugins/gradle-mode"]
+	path = plugins/gradle-mode
+	url = git@github.com:djmijares/emacs-gradle-mode.git
