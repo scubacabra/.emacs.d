@@ -5,7 +5,7 @@
 (add-to-list 'interpreter-mode-alist '("groovy" . groovy-mode))
 (add-to-list 'auto-mode-alist '("\\.gradle$" . groovy-mode))
 (require 'gradle-mode)
-
+(require 'gradle)
 ;;(require 'groovy-eval)
 (autoload 'groovy-eval "groovy-eval" "Groovy Evaluation" t)
 (add-hook 'groovy-mode-hook 'groovy-eval)

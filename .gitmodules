@@ -37,3 +37,6 @@
 [submodule "plugins/gradle-mode"]
 	path = plugins/gradle-mode
 	url = git@github.com:djmijares/emacs-gradle-mode.git
+[submodule "plugins/gradle"]
+	path = plugins/gradle
+	url = git@github.com:djmijares/gradle-el.git
