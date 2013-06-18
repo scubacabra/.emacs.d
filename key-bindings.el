@@ -51,6 +51,9 @@
 (global-set-key (kbd "C-z") 'shell)
 (global-set-key (kbd "C-x M-z") 'suspend-frame)
 
+;; easier to call recompile
+(global-set-key (kbd "C-c C-r c") 'recompile)
+
 ;; Create new frame
 (define-key global-map (kbd "C-x C-n") 'make-frame-command)
 
