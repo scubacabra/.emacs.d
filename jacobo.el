@@ -46,6 +46,8 @@
 (require 'jacobo/doc-mode)
 ;; spock-mode
 (require 'spock-mode)
+;; gradle-mode
+(require 'jacobo/gradle-mode)
 ;; nxml mode configuration
 (require 'jacobo/xml-setup)
 ;; stripe-buffer prettify lists
