@@ -43,3 +43,6 @@
 [submodule "plugins/markdown-mode"]
 	path = plugins/markdown-mode
 	url = git@github.com:defunkt/markdown-mode.git
+[submodule "plugins/magit"]
+	path = plugins/magit
+	url = git@github.com:magit/magit.git
