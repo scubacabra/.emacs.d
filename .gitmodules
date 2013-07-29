@@ -40,3 +40,6 @@
 [submodule "plugins/gradle"]
 	path = plugins/gradle
 	url = git@github.com:djmijares/gradle-el.git
+[submodule "plugins/markdown-mode"]
+	path = plugins/markdown-mode
+	url = git@github.com:defunkt/markdown-mode.git
