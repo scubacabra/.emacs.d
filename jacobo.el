@@ -64,9 +64,6 @@
 ;; zoom-frm
 (require 'jacobo/zoom-frm)
 
-;; ;; doc-mode ?? 
-;; (require 'jacobo/doc-mode)
-
 ;; ;; spock-mode --- need submodule I think
 ;; (require 'spock-mode)
 
