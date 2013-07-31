@@ -30,13 +30,6 @@
 ;; ;; projectile mode Keep ??
 ;; (require 'jacobo/projectile)
 
-;; ;; project-mode Keep ??
-;; (require 'jacobo/project-mode-customization)
-
-;;; mark for deletion with helm-git takes care of this
-;; ;; grails mode ;; from google code thing, not necessary with grails releases
-;; (require 'jacobo/grails)
-
 ;; helm mode
 (require 'jacobo/helm-mode)
 
