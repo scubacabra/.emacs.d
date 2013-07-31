@@ -43,9 +43,6 @@
 ;; configure extras on magit
 (require 'jacobo/magit)
 
-;; ;; auto-complete
-;; (require 'jacobo/auto-complete)
-
 ;; ace-jump mode
 (require 'jacobo/ace-jump-mode)
 
