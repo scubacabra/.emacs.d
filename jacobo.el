@@ -27,9 +27,6 @@
 ;; ;; java-mode plus
 ;; (require 'jacobo/java-mode)
 
-;; ;; projectile mode Keep ??
-;; (require 'jacobo/projectile)
-
 ;; helm mode
 (require 'jacobo/helm-mode)
 
