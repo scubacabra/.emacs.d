@@ -15,18 +15,18 @@
 
 ;; setup path to dependencies
 (setq jacobo (expand-file-name "jacobo" dotfiles-dir))
-(setq plugins (expand-file-name "plugins" dotfiles-dir))
+;;(setq plugins (expand-file-name "plugins" dotfiles-dir))
 (setq defuns-dir (expand-file-name "defuns" dotfiles-dir))
 
 ;; set up load path
 (add-to-list 'load-path dotfiles-dir)
 (add-to-list 'load-path jacobo)
-(add-to-list 'load-path plugins)
+;;(add-to-list 'load-path plugins)
 
 ;; add external projects to load-path TODO
-(dolist (project (directory-files plugins t "\\w+"))
-  (when (file-directory-p project)
-    (add-to-list 'load-path project)))
+;; (dolist (project (directory-files plugins t "\\w+"))
+;;   (when (file-directory-p project)
+;;     (add-to-list 'load-path project)))
 
 ;; add defuns in external library in
 (dolist (file (directory-files defuns-dir t "\\w+"))
