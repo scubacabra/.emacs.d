@@ -46,9 +46,6 @@
 ;; ace-jump mode
 (require 'jacobo/ace-jump-mode)
 
-;; ;; mark-multiple mark for deletion with multiple cursors superseding it
-;; (require 'jacobo/mark-multiple.el)
-
 ;; multiple cursors
 (require 'jacobo/multiple-cursors)
 
