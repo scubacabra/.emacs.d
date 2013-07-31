@@ -43,10 +43,6 @@
 ;; configure extras on magit
 (require 'jacobo/magit)
 
-;;; mark deletion
-;; ;; helm git
-;; (require 'helm-git)
-
 ;; ;; auto-complete
 ;; (require 'jacobo/auto-complete)
 
