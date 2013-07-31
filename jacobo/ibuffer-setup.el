@@ -34,4 +34,10 @@
 	  (lambda ()
 	    (ibuffer-switch-to-saved-filter-groups "default")))
 
+(add-hook 'ibuffer-hook
+	  (lambda ()
+	    (ibuffer-vc-set-filter-groups-by-vc-root)
+	    (unless (eq ibuffer-sorting-mode 'alphabetic)
+	      (ibuffer-do-sort-by-alphabetic))))
+
 (provide 'jacobo/ibuffer-setup)
