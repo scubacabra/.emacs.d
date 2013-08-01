@@ -31,4 +31,5 @@
 (depends-on "smart-forward")
 (depends-on "smex")
 (depends-on "stripe-buffer")
+(depends-on "yasnippet")
 (depends-on "zoom-frm")
