@@ -4,3 +4,5 @@ elpa
 tramp
 .mc-lists.el
 .cask
+%backup%~
+ac-*.dat
