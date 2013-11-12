@@ -6,3 +6,4 @@ tramp
 .cask
 %backup%~
 ac-*.dat
+javadoc-cache
