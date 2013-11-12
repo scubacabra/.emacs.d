@@ -73,5 +73,8 @@
 ;; ;; gist
 ;; (require 'jacobo/gist)
 
+;; javadoc setup
+(require 'jacobo/javadoc)
+
 (provide 'jacobo)
 ;; end of jacobo.el
