@@ -3,7 +3,9 @@
              '("melpa" . "http://melpa.milkbox.net/packages/") t)
 (package-initialize)
 
-;; pallet for carton management
+(require 'cask "~/.cask/cask.el")
+(cask-initialize)
+;; pallet for cask management
 (require 'pallet)
 
 ;;ibuffer setup
