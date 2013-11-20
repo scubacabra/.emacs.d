@@ -1,9 +1,9 @@
-[submodule "plugins/java-mode-plus"]
-	path = plugins/java-mode-plus
-	url = git@github.com:djmijares/java-mode-plus.git
-[submodule "plugins/groovy-mode-plus"]
-	path = plugins/groovy-mode-plus
-	url = git@github.com:djmijares/groovy-mode-plus.git
 [submodule "plugins/gradle-mode"]
 	path = plugins/gradle-mode
-	url = git@github.com:djmijares/emacs-gradle-mode.git
+	url = https://github.com/jacobono/emacs-gradle-mode.git
+[submodule "plugins/groovy-mode-plus"]
+	path = plugins/groovy-mode-plus
+	url = https://github.com/jacobono/groovy-mode-plus.git
+[submodule "plugins/java-mode-plus"]
+	path = plugins/java-mode-plus
+	url = https://github.com/jacobono/java-mode-plus.git
