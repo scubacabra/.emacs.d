@@ -26,8 +26,8 @@
 ;; groovy mode
 (require 'jacobo/groovy)
 
-;; ;; java-mode plus
-;; (require 'jacobo/java-mode)
+;; java-mode plus
+(require 'jacobo/java-mode)
 
 ;; helm mode
 (require 'jacobo/helm-mode)
@@ -59,8 +59,8 @@
 ;; ;; spock-mode --- need submodule I think
 ;; (require 'spock-mode)
 
-;; ;; gradle-mode -- need submodule I think
-;; (require 'jacobo/gradle-mode)
+;; gradle-mode -- need submodule I think
+(require 'jacobo/gradle-mode)
 
 ;; nxml mode configuration
 (require 'jacobo/xml-setup)
