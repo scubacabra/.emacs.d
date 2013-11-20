@@ -1,4 +1,4 @@
-;; (require 'groovy-mode-plus)
+(require 'groovy-mode-plus)
 
 (add-to-list 'auto-mode-alist '("\\.groovy$" . groovy-mode))
 (add-to-list 'interpreter-mode-alist '("groovy" . groovy-mode))
