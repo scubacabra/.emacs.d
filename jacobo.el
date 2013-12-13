@@ -78,5 +78,8 @@
 ;; javadoc setup
 (require 'jacobo/javadoc)
 
+;; smart tabs setup
+(require 'jacobo/setup-smart-tabs)
+
 (provide 'jacobo)
 ;; end of jacobo.el
