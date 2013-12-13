@@ -36,11 +36,12 @@
     (load file)))
 
 ;; write backup files to own directory
-(setq backup-directory-alist `(("." . , (expand-file-name 
+(setq backup-directory-alist `(("." . ,(expand-file-name 
 					"backups" dotfiles-dir))))
-;; write autosave to their own dir also
-(setq auto-save-file-name-transforms `((".*" ,
-					(expand-file-name "autosaves" dotfiles-dir))))
+
+;; write autosaves to their own directory
+(setq auto-save-file-name-transforms
+      `((".*" ,(expand-file-name "autosaves/" dotfiles-dir) t)))
 
 ;; is this on a mac??
 (setq is-mac (equal system-type 'darwin))
