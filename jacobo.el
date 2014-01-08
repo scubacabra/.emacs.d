@@ -81,5 +81,9 @@
 ;; smart tabs setup
 (require 'jacobo/setup-smart-tabs)
 
+;; auto-complete setup
+(require 'auto-complete)
+(global-auto-complete-mode)
+
 (provide 'jacobo)
 ;; end of jacobo.el
