@@ -54,11 +54,13 @@
 (require 'key-bindings)
 
 ;; set-up appearance
-(load-theme 'tangotango t)
 (require 'appearance)
 
 ;; load up my cust file to load up everything else
 (require 'jacobo)
+
+;; load theme of choice
+(load-theme 'tangotango t)
 
 (provide 'init)
 ;; init.el ends here
