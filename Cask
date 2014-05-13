@@ -1,4 +1,5 @@
 (source gnu)
+(source marmalade)
 (source melpa)
 
 (depends-on "ace-jump-buffer")
@@ -12,6 +13,7 @@
 (depends-on "dired+")
 (depends-on "dired-details")
 (depends-on "dired-details+")
+(depends-on "doc-mode")
 (depends-on "epl")
 (depends-on "expand-region")
 (depends-on "f")
