@@ -1,5 +1,5 @@
-(source melpa)
 (source gnu)
+(source melpa)
 
 (depends-on "ace-jump-buffer")
 (depends-on "ace-jump-mode")
@@ -51,5 +51,6 @@
 (depends-on "smart-tabs-mode")
 (depends-on "smex")
 (depends-on "stripe-buffer")
+(depends-on "tangotango-theme")
 (depends-on "yasnippet")
 (depends-on "zoom-frm")
