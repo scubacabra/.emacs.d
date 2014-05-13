@@ -53,4 +53,5 @@
 (depends-on "stripe-buffer")
 (depends-on "tangotango-theme")
 (depends-on "yasnippet")
+(depends-on "zenburn-theme")
 (depends-on "zoom-frm")

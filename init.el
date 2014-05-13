@@ -54,8 +54,7 @@
 (require 'key-bindings)
 
 ;; set-up appearance
-(add-to-list 'custom-theme-load-path (concat dotfiles-dir "themes/"))
-(load-theme 'zenburn t)
+(load-theme 'tangotango t)
 (require 'appearance)
 
 ;; load up my cust file to load up everything else
