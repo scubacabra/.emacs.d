@@ -26,6 +26,7 @@
 (depends-on "gist")
 (depends-on "git-commit-mode")
 (depends-on "git-rebase-mode")
+(depends-on "gradle-mode")
 (depends-on "groovy-mode")
 (depends-on "helm")
 (depends-on "helm-gist")
