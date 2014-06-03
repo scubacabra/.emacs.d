@@ -78,9 +78,6 @@
 ;; javadoc setup
 (require 'jacobo/javadoc)
 
-;; doc-mode (for java docs and doxygen)
-(require 'jacobo/doc-mode)
-
 ;; smart tabs setup
 (require 'jacobo/setup-smart-tabs)
 
