@@ -7,3 +7,6 @@
 [submodule "snippets/java-mode"]
 	path = snippets/java-mode
 	url = https://github.com/nekop/yasnippet-java-mode.git
+[submodule "snippets"]
+	path = snippets
+	url = https://github.com/jacobono/yasnippet-snippets.git
