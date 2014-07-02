@@ -82,8 +82,14 @@
 (require 'jacobo/setup-smart-tabs)
 
 ;; auto-complete setup
-(require 'auto-complete)
-(global-auto-complete-mode)
+(require 'jacobo/auto-complete)
+
+;; projectile-mode
+(require 'jacobo/projectile-mode)
+
+;; flycheck mode setup
+(require 'jacobo/flycheck)
+
 
 (provide 'jacobo)
 ;; end of jacobo.el
