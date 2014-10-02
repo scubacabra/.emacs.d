@@ -42,6 +42,9 @@
 ;; ace-jump mode
 (require 'jacobo/ace-jump-mode)
 
+;; ace-window mode
+(require 'jacobo/ace-window-mode)
+
 ;; multiple cursors
 (require 'jacobo/multiple-cursors)
 

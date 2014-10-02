@@ -4,6 +4,7 @@
 
 (depends-on "ace-jump-buffer")
 (depends-on "ace-jump-mode")
+(depends-on "ace-window")
 (depends-on "auto-complete")
 (depends-on "browse-kill-ring")
 (depends-on "cask")
