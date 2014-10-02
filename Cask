@@ -46,6 +46,7 @@
 (depends-on "json-mode")
 (depends-on "logito")
 (depends-on "magit")
+(depends-on "magit-gh-pulls")
 (depends-on "markdown-mode")
 (depends-on "markdown-mode+")
 (depends-on "multiple-cursors")
