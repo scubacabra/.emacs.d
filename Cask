@@ -27,6 +27,7 @@
 (depends-on "gh")
 (depends-on "gist")
 (depends-on "git-commit-mode")
+(depends-on "git-gutter")
 (depends-on "git-rebase-mode")
 (depends-on "google-c-style")
 (depends-on "gradle-mode")

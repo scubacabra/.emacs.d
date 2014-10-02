@@ -100,6 +100,8 @@
 ;; flycheck mode setup
 (require 'jacobo/flycheck)
 
+;; git-gutter mode
+(require 'jacobo/git-gutter-mode)
 
 (provide 'jacobo)
 ;; end of jacobo.el
