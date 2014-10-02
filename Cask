@@ -15,6 +15,7 @@
 (depends-on "dired-details")
 (depends-on "dired-details+")
 (depends-on "epl")
+(depends-on "exec-path-from-shell")
 (depends-on "expand-region")
 (depends-on "f")
 (depends-on "feature-mode")

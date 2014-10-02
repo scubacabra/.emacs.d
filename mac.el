@@ -1,14 +1,19 @@
 ;; change command to meta, ignore option key
-(setq mac-option-modifier 'none)
+(setq mac-option-modifier 'super)
 (setq mac-command-modifier 'meta)
 (setq ns-function-modifier 'hyper)
 
 ;; mac friendly font
 (set-face-attribute 'default nil :font "Monaco-16")
 
-;; make sure path is correct when launched as application
-(setenv "PATH" (concat "/usr/local/bin:" (getenv "PATH")))
-(push "/usr/local/bin" exec-path)
+;; get PATH from shell
+(exec-path-from-shell-initialize)
+(exec-path-from-shell-copy-env "JAVA_HOME")
+(exec-path-from-shell-copy-env "GRAILS_HOME")
+
+;; ;; make sure path is correct when launched as application
+;; (setenv "PATH" (concat "/usr/local/bin:" (getenv "PATH")))
+;; (push "/usr/local/bin" exec-path)
 
 ;; keybinding to toggle full screen mode
 (global-set-key (quote [M-f10]) (quote ns-toggle-fullscreen))
