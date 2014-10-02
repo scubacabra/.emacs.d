@@ -3,10 +3,10 @@
 (line-number-mode 1)
 (column-number-mode 1)
 (show-paren-mode 1)
+(tool-bar-mode 0)
 
 ;; answer questions with y or n
 (fset 'yes-or-no-p 'y-or-n-p)
-
 
 ;;ido-mode
 (ido-mode 1)
