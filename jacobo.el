@@ -8,6 +8,13 @@
 ;; pallet for cask management
 (require 'pallet)
 
+;; dired-async
+(when (require 'dired-aux)
+   (require 'dired-async))
+
+;; helm mode
+(require 'jacobo/helm-mode)
+
 ;;ibuffer setup
 (require 'jacobo/ibuffer-setup)
 
@@ -28,9 +35,6 @@
 
 ;; java-mode plus
 (require 'jacobo/java-mode)
-
-;; helm mode
-(require 'jacobo/helm-mode)
 
 ;; configure extras on magit
 (require 'jacobo/magit)
