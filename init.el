@@ -43,10 +43,6 @@
 (setq auto-save-file-name-transforms
       `((".*" ,(expand-file-name "autosaves/" dotfiles-dir) t)))
 
-;; is this on a mac??
-(setq is-mac (equal system-type 'darwin))
-(when is-mac (require 'mac))
-
 ;; load custom modes I like
 (require 'load-custom-modes)
 
@@ -59,8 +55,14 @@
 ;; load up my cust file to load up everything else
 (require 'jacobo)
 
+;; is this on a mac??
+(setq is-mac (equal system-type 'darwin))
+(when is-mac (require 'mac))
+
 ;; load theme of choice
 (load-theme 'tangotango t)
+
+(set-register ?e '(file . "~/.emacs.d/jacobo.el"))
 
 (provide 'init)
 ;; init.el ends here
