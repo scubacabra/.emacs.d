@@ -48,6 +48,9 @@
 ;; multiple cursors
 (require 'jacobo/multiple-cursors)
 
+;; iy-go-to-char
+(require 'jacobo/iy-go-to-char-mode)
+
 ;; browse kill ring
 (require 'jacobo/browse-kill-ring)
 

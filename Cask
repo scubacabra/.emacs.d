@@ -38,6 +38,7 @@
 (depends-on "helm-projectile")
 (depends-on "helm-projectile-all")
 (depends-on "ibuffer-vc")
+(depends-on "iy-go-to-char")
 (depends-on "javadoc-lookup")
 (depends-on "json-mode")
 (depends-on "logito")
