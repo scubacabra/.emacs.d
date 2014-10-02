@@ -62,6 +62,7 @@
 (depends-on "smex")
 (depends-on "stripe-buffer")
 (depends-on "tangotango-theme")
+(depends-on "web-mode")
 (depends-on "yaml-mode")
 (depends-on "yasnippet")
 (depends-on "zenburn-theme")

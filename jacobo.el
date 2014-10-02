@@ -103,6 +103,9 @@
 ;; flycheck mode setup
 (require 'jacobo/flycheck)
 
+;; web-mode
+(require 'jacobo/web-mode)
+
 ;; git-gutter mode
 (require 'jacobo/git-gutter-mode)
 
