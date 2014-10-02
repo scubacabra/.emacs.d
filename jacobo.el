@@ -33,6 +33,9 @@
 ;; groovy mode
 (require 'jacobo/groovy)
 
+;; grails-projectile-mode
+(require 'jacobo/grails)
+
 ;; java-mode plus
 (require 'jacobo/java-mode)
 
