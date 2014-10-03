@@ -57,9 +57,6 @@
 ;; browse kill ring
 (require 'jacobo/browse-kill-ring)
 
-;; smex
-(require 'jacobo/smex)
-
 ;; feature-mode
 (require 'jacobo/feature-mode)
 
