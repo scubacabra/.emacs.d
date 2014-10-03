@@ -40,6 +40,7 @@
 (depends-on "helm-ls-git")
 (depends-on "helm-projectile")
 (depends-on "helm-projectile-all")
+(depends-on "helm-swoop")
 (depends-on "ibuffer-vc")
 (depends-on "inf-groovy")
 (depends-on "iy-go-to-char")
