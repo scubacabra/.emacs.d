@@ -69,3 +69,4 @@
 (depends-on "yasnippet")
 (depends-on "zenburn-theme")
 (depends-on "zoom-frm")
+(depends-on "zygospore")

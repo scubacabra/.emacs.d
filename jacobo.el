@@ -106,5 +106,8 @@
 ;; git-gutter mode
 (require 'jacobo/git-gutter-mode)
 
+;; zygospore
+(global-set-key (kbd "C-x 1") 'zygospore-toggle-delete-other-windows)
+
 (provide 'jacobo)
 ;; end of jacobo.el
