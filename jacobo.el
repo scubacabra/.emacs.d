@@ -109,5 +109,8 @@
 ;; zygospore
 (global-set-key (kbd "C-x 1") 'zygospore-toggle-delete-other-windows)
 
+;; smartparens
+(require 'jacobo/smartparens-setup)
+
 (provide 'jacobo)
 ;; end of jacobo.el

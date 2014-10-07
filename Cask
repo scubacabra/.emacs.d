@@ -64,6 +64,7 @@
 (depends-on "s")
 (depends-on "smart-forward")
 (depends-on "smart-tabs-mode")
+(depends-on "smartparens")
 (depends-on "smex")
 (depends-on "stripe-buffer")
 (depends-on "tangotango-theme")
