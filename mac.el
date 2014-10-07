@@ -7,7 +7,6 @@
 (set-face-attribute 'default nil :font "Monaco-16")
 
 ;; get PATH from shell
-(exec-path-from-shell-initialize)
 (exec-path-from-shell-copy-env "JAVA_HOME")
 (exec-path-from-shell-copy-env "GRAILS_HOME")
 

@@ -8,6 +8,9 @@
 ;; pallet for cask management
 (require 'pallet)
 
+(when (memq window-system '(mac ns))
+  (exec-path-from-shell-initialize))
+
 ;; dired-async
 (when (require 'dired-aux)
    (require 'dired-async))
@@ -113,4 +116,4 @@
 (require 'jacobo/smartparens-setup)
 
 (provide 'jacobo)
-;; end of jacobo.el
+;;; jacobo.el ends here
