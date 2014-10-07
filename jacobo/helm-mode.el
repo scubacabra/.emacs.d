@@ -9,6 +9,7 @@
 (global-set-key (kbd "C-c h m") 'helm-mini)
 (global-set-key (kbd "C-c h g") 'helm-ls-git-ls)
 (global-set-key (kbd "C-x f") 'helm-find-files)
+(global-set-key (kbd "M-x") 'helm-M-x)
 
 (when (executable-find "curl")
   (setq helm-google-suggest-use-curl-p t))
@@ -21,6 +22,7 @@
       helm-scroll-amount                    8 ; scroll 8 lines other window using M-<next>/M-<prior>
       helm-ff-file-name-history-use-recentf t)
 
+(require 'helm-swoop)
 (global-set-key (kbd "M-i") 'helm-swoop)
 (global-set-key (kbd "M-I") 'helm-swoop-back-to-last-point)
 (global-set-key (kbd "C-c M-i") 'helm-multi-swoop)
