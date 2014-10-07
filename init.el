@@ -60,7 +60,7 @@
 (when is-mac (require 'mac))
 
 ;; load theme of choice
-(load-theme 'tangotango t)
+(load-theme 'zenburn t)
 
 (set-register ?e '(file . "~/.emacs.d/jacobo.el"))
 
