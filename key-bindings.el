@@ -103,11 +103,6 @@
 (global-set-key (kbd "M-p") 'backward-paragraph)
 (global-set-key (kbd "M-n") 'forward-paragraph)
 
-(global-set-key (kbd "M-<up>") 'smart-up)
-(global-set-key (kbd "M-<down>") 'smart-down)
-(global-set-key (kbd "M-<left>") 'smart-backward)
-(global-set-key (kbd "M-<right>") 'smart-forward)
-
 ;; Webjump let's you quickly search google, wikipedia, emacs wiki
 (global-set-key (kbd "C-x g") 'webjump)
 (global-set-key (kbd "C-x M-g") 'browse-url-at-point)
