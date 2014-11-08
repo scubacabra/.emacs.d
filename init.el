@@ -63,6 +63,7 @@
 (load-theme 'zenburn t)
 
 (set-register ?e '(file . "~/.emacs.d/jacobo.el"))
+(set-register ?b '(file . "~/.bashrc"))
 
 (provide 'init)
 ;; init.el ends here
