@@ -64,6 +64,7 @@
 (depends-on "request")
 (depends-on "s")
 (depends-on "smart-forward")
+(depends-on "smart-tab")
 (depends-on "smart-tabs-mode")
 (depends-on "smartparens")
 (depends-on "smex")

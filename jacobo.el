@@ -24,6 +24,11 @@
 ;; org stuff
 (require 'jacobo/org-mode)
 
+;; smart tab mode
+(require 'jacobo/smart-tab)
+
+;; emacs completion
+(require 'jacobo/emacs-completion)
 
 ;; expand-region
 (require 'jacobo/expand-region)
@@ -91,9 +96,6 @@
 
 ;; smart tabs setup
 (require 'jacobo/setup-smart-tabs)
-
-;; auto-complete setup
-(require 'jacobo/auto-complete)
 
 ;; projectile-mode
 (require 'jacobo/projectile-mode)
