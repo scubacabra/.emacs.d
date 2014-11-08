@@ -24,8 +24,6 @@
 ;; org stuff
 (require 'jacobo/org-mode)
 
-;; Yasnippets stuff
-(require 'jacobo/yasnippet)
 
 ;; expand-region
 (require 'jacobo/expand-region)
