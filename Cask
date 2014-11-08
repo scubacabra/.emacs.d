@@ -33,6 +33,7 @@
 (depends-on "git-rebase-mode")
 (depends-on "google-c-style")
 (depends-on "gradle-mode")
+(depends-on "grails-projectile-mode")
 (depends-on "groovy-mode")
 (depends-on "helm")
 (depends-on "helm-gist")
