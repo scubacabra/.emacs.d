@@ -1,7 +1,9 @@
 
-** TODO do the whole eval-after-load stuff for certain modes like grails etc.
+** DONE do the whole eval-after-load stuff for certain modes like grails etc.
+   CLOSED: [2014-08-15 Fri 18:40]
 
-** TODO bash completion
+** DONE bash completion
+   CLOSED: [2014-08-15 Fri 18:40]
 
 ** DONE multiple cursors
    CLOSED: [2012-08-24 Fri 20:59]
@@ -14,17 +16,22 @@
 ** DONE smart-forward order after expand region
    CLOSED: [2012-08-24 Fri 20:38]
 
-** TODO Customize this color theme, varying fon't sizes?
+** DONE Customize this color theme, varying fon't sizes?
+   CLOSED: [2014-08-15 Fri 18:39]
 
 ** DONE yasnippets redo add custom snippets to different dir
    CLOSED: [2012-08-26 Sun 14:05]
 ** DONE Feature Mode
    CLOSED: [2012-08-24 Fri 21:22]
-** TODO do a toggle between multiple windows and a single window [[http://thornydev.blogspot.com/2012/08/happiness-is-emacs-trifecta.html][here]]
-** TODO Learn emacs grep
+** DONE do a toggle between multiple windows and a single window [[http://thornydev.blogspot.com/2012/08/happiness-is-emacs-trifecta.html][here]]
+   CLOSED: [2014-08-15 Fri 18:40]
+** DONE Learn emacs grep
+   CLOSED: [2014-08-15 Fri 18:39]
 ** DONE Install zoom-frm
    CLOSED: [2012-11-08 Thu 12:12]
-** TODO install dired-details and dired=details+
+** DONE install dired-details and dired=details+
+   CLOSED: [2014-08-15 Fri 18:40]
 ** DONE Put groovy-mode as a repo on my git
    CLOSED: [2012-11-08 Thu 12:12]
-** TODO check out eproject
+** DONE check out eproject
+   CLOSED: [2014-08-15 Fri 18:39]
