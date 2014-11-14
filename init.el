@@ -55,10 +55,6 @@
 ;; load up my cust file to load up everything else
 (require 'jacobo)
 
-;; is this on a mac??
-(setq is-mac (equal system-type 'darwin))
-(when is-mac (require 'mac))
-
 ;; load theme of choice
 (load-theme 'zenburn t)
 
@@ -67,3 +63,18 @@
 
 (provide 'init)
 ;; init.el ends here
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(flycheck-c/c++-googlelint-executable "/usr/local/bin/cpplint")
+ '(flycheck-googlelint-filter "-whitespace,+whitespace/braces")
+ '(flycheck-googlelint-verbose "3")
+ '(safe-local-variable-values (quote ((eval progn (message "hello")) (eval message "hello") (eval progn (allout-hide-bodies) (beginning-of-buffer) (allout-hide-current-subtree))))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )

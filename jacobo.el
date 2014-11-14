@@ -11,6 +11,10 @@
 (when (memq window-system '(mac ns))
   (exec-path-from-shell-initialize))
 
+;; is this on a mac??
+(setq is-mac (equal system-type 'darwin))
+(when is-mac (require 'mac))
+
 ;; dired-async
 (when (require 'dired-aux)
    (require 'dired-async))

@@ -9,6 +9,7 @@
 ;; get PATH from shell
 (exec-path-from-shell-copy-env "JAVA_HOME")
 (exec-path-from-shell-copy-env "GRAILS_HOME")
+(exec-path-from-shell-copy-env "GROOVY_HOME")
 
 ;; ;; make sure path is correct when launched as application
 ;; (setenv "PATH" (concat "/usr/local/bin:" (getenv "PATH")))
