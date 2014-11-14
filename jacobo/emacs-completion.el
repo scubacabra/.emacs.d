@@ -24,5 +24,7 @@
 	try-expand-line))
 
 (global-set-key (kbd "TAB") 'hippie-expand)
+;; to expand when in a snippet-mode
+;; (global-set-key (kbd "M-/") 'hippie-expand)
 
 (provide 'jacobo/emacs-completion)
