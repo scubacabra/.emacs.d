@@ -20,7 +20,7 @@
 (depends-on "expand-region")
 (depends-on "f")
 (depends-on "feature-mode")
-(depends-on "feature-mode")
+(depends-on "fish-mode")
 (depends-on "fit-frame")
 (depends-on "flycheck")
 (depends-on "flycheck-google-cpplint")

@@ -1,3 +1,6 @@
+;; using fish, grep and find do not work with the expected format of fish
+(setq shell-file-name "/bin/sh")
+
 ;; change command to meta, ignore option key
 (setq mac-option-modifier 'super)
 (setq mac-command-modifier 'meta)
