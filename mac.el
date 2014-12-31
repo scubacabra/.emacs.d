@@ -6,8 +6,10 @@
 (setq mac-command-modifier 'meta)
 (setq ns-function-modifier 'hyper)
 
-;; mac friendly font
-(set-face-attribute 'default nil :font "Monaco-16")
+;; mac friendly font, different ways to set up fonts
+(if (daemonp)
+    (setq default-frame-alist '((font . "Monaco-16")))
+    (set-face-attribute 'default nil :font "Monaco-16"))
 
 ;; get PATH from shell
 (exec-path-from-shell-copy-env "JAVA_HOME")

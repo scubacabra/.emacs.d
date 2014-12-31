@@ -25,6 +25,9 @@
 (let ((default-directory plugins))
   (normal-top-level-add-subdirs-to-load-path))
 
+;; load up my cust file to load up everything else
+(require 'jacobo)
+
 ;; add external projects to load-path TODO
 ;; (dolist (project (directory-files plugins t "\\w+"))
 ;;   (when (file-directory-p project)
@@ -51,9 +54,6 @@
 
 ;; set-up appearance
 (require 'appearance)
-
-;; load up my cust file to load up everything else
-(require 'jacobo)
 
 ;; load theme of choice
 (load-theme 'zenburn t)
