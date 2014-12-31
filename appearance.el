@@ -12,7 +12,8 @@
 (set-face-background 'hl-line "#222222")
 
 ;; Highlight in yasnippet TODO
-;;(set-face-background 'yas/field-highlight-face "#333399")
+(require 'yasnippet)
+(set-face-background 'yas-field-highlight-face "#333399")
 
 (set-face-foreground 'font-lock-warning-face "#ff6666")
 
@@ -30,20 +31,8 @@
 ;; No menu bars
 (menu-bar-mode -1)
 
-;; (when window-system
-;;   (setq frame-title-format '(buffer-file-name "%f" ("%b")))
-;;   (turn-off-tool-bar)
-;;   (tooltip-mode -1)
-;;   (turn-off-tool-bar)
-;;   (blink-cursor-mode -1))
-
-(add-hook 'before-make-frame-hook 'turn-off-tool-bar)
-
 ;; Ditch them scrollbars
 (scroll-bar-mode -1)
-
-;; Make zooming affect frame instead of buffers TODO
-;;(require 'zoom-frm)
 
 ;; Make ediff default to in frame ediff not new frame
 (setq ediff-window-setup-function 'ediff-setup-windows-plain)
