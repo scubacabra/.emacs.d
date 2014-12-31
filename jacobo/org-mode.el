@@ -11,6 +11,19 @@
 
 (setq org-agenda-files (list "~/.emacs.d/todo.org"))
 
+(require 'org-bullets)
+(setq org-bullets-bullet-list
+  '(;;; Large
+    "◉"
+    "○"
+    "○"
+    "◆"
+    "◇"
+    ;; ♥ ● ◇ ✚ ✜ ☯ ◆ ♠ ♣ ♦ ☢ ☆❀ ◆ ◖ ▶ ★ ✽
+;;; Small
+    ;; ► • ★ ▸
+    ))
+
 (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
 
 (provide 'jacobo/org-mode)
