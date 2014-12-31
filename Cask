@@ -65,6 +65,7 @@
 (depends-on "popup")
 (depends-on "projectile")
 (depends-on "rainbow-delimiters")
+(depends-on "rainbow-mode")
 (depends-on "request")
 (depends-on "s")
 (depends-on "smart-forward")
