@@ -11,8 +11,8 @@
 
 (define-key sp-keymap (kbd "C-M-d") 'sp-down-sexp)
 (define-key sp-keymap (kbd "C-M-a") 'sp-backward-down-sexp)
-(define-key sp-keymap (kbd "C-S-a") 'sp-beginning-of-sexp)
-(define-key sp-keymap (kbd "C-S-d") 'sp-end-of-sexp)
+(define-key sp-keymap (kbd "C-s-a") 'sp-beginning-of-sexp)
+(define-key sp-keymap (kbd "C-s-d") 'sp-end-of-sexp)
 
 (define-key sp-keymap (kbd "C-M-e") 'sp-up-sexp)
 (define-key emacs-lisp-mode-map (kbd ")") 'sp-up-sexp)
@@ -28,15 +28,15 @@
 (define-key sp-keymap (kbd "M-<delete>") 'sp-unwrap-sexp)
 (define-key sp-keymap (kbd "M-<backspace>") 'sp-backward-unwrap-sexp)
 
-(define-key sp-keymap (kbd "C-<right>") 'sp-forward-slurp-sexp)
-(define-key sp-keymap (kbd "C-<left>") 'sp-forward-barf-sexp)
-(define-key sp-keymap (kbd "C-M-<left>") 'sp-backward-slurp-sexp)
-(define-key sp-keymap (kbd "C-M-<right>") 'sp-backward-barf-sexp)
+(define-key sp-keymap (kbd "C-s-f") 'sp-forward-slurp-sexp)
+(define-key sp-keymap (kbd "C-s-M-f") 'sp-forward-barf-sexp)
+(define-key sp-keymap (kbd "C-s-b") 'sp-backward-slurp-sexp)
+(define-key sp-keymap (kbd "C-s-M-b") 'sp-backward-barf-sexp)
 
 (define-key sp-keymap (kbd "M-D") 'sp-splice-sexp)
 (define-key sp-keymap (kbd "C-M-<delete>") 'sp-splice-sexp-killing-forward)
 (define-key sp-keymap (kbd "C-M-<backspace>") 'sp-splice-sexp-killing-backward)
-(define-key sp-keymap (kbd "C-S-<backspace>") 'sp-splice-sexp-killing-around)
+(define-key sp-keymap (kbd "C-s-<backspace>") 'sp-splice-sexp-killing-around)
 
 (define-key sp-keymap (kbd "C-]") 'sp-select-next-thing-exchange)
 (define-key sp-keymap (kbd "C-<left_bracket>") 'sp-select-previous-thing)
