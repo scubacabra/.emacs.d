@@ -57,6 +57,7 @@
 (depends-on "markdown-mode")
 (depends-on "markdown-mode+")
 (depends-on "multiple-cursors")
+(depends-on "nyan-mode")
 (depends-on "org")
 (depends-on "org-bullets")
 (depends-on "pallet")
