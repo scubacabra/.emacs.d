@@ -119,5 +119,8 @@
 ;; smartparens
 (require 'jacobo/smartparens-setup)
 
+;; clojure
+(require 'jacobo/clojure)
+
 (provide 'jacobo)
 ;;; jacobo.el ends here
