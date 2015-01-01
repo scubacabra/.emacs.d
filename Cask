@@ -4,6 +4,7 @@
 
 (depends-on "ace-jump-buffer")
 (depends-on "ace-jump-mode")
+(depends-on "ace-jump-zap")
 (depends-on "ace-window")
 (depends-on "async")
 (depends-on "auto-complete")

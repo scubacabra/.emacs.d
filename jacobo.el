@@ -58,6 +58,9 @@
 ;; ace-window mode
 (require 'jacobo/ace-window-mode)
 
+;; ace-jump-zap
+(require 'jacobo/ace-jump-zap)
+
 ;; multiple cursors
 (require 'jacobo/multiple-cursors)
 
