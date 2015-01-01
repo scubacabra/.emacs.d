@@ -122,5 +122,8 @@
 ;; clojure
 (require 'jacobo/clojure)
 
+;; ido vertical mode
+(ido-vertical-mode t)
+
 (provide 'jacobo)
 ;;; jacobo.el ends here

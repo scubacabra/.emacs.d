@@ -47,6 +47,7 @@
 (depends-on "helm-swoop")
 (depends-on "helm-themes")
 (depends-on "ibuffer-vc")
+(depends-on "ido-vertical-mode")
 (depends-on "inf-groovy")
 (depends-on "iy-go-to-char")
 (depends-on "javadoc-lookup")
