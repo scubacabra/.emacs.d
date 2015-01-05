@@ -12,6 +12,7 @@
 (depends-on "cask")
 (depends-on "cider")
 (depends-on "column-marker")
+(depends-on "company")
 (depends-on "clojure-mode")
 (depends-on "clojure-mode-extra-font-locking")
 (depends-on "dash")
