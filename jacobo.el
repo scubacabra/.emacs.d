@@ -55,8 +55,8 @@
 ;; configure extras on magit
 (require 'jacobo/magit)
 
-;; ace-jump mode
-(require 'jacobo/ace-jump-mode)
+;; ace-jump mode and jump-car mode
+(require 'jacobo/char-jump)
 
 ;; ace-window mode
 (require 'jacobo/ace-window-mode)
@@ -66,9 +66,6 @@
 
 ;; multiple cursors
 (require 'jacobo/multiple-cursors)
-
-;; iy-go-to-char
-(require 'jacobo/iy-go-to-char-mode)
 
 ;; browse kill ring
 (require 'jacobo/browse-kill-ring)

@@ -1,3 +1,5 @@
+;; ace-jump
+
 (autoload
   'ace-jump-mode
   "ace-jump-mode"
@@ -18,4 +20,11 @@
 
 (define-key global-map (kbd "C-x SPC") 'ace-jump-mode-pop-mark)
 
-(provide 'jacobo/ace-jump-mode)
+;; jump-char
+;; TODO get jump-char to work with multiple-cursors like iy-go-to-char
+(require 'jump-char)
+
+(global-set-key (kbd "M-m") 'jump-char-forward)
+(global-set-key (kbd "M-M") 'jump-char-backward)
+
+(provide 'jacobo/char-jump)
