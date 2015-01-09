@@ -22,6 +22,9 @@
 ;; helm mode
 (require 'jacobo/helm-mode)
 
+;; helm-gtags
+(require 'jacobo/helm-gtags)
+
 ;;ibuffer setup
 (require 'jacobo/ibuffer-setup)
 

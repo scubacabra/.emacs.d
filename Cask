@@ -43,6 +43,7 @@
 (depends-on "helm-descbinds")
 (depends-on "helm-gist")
 (depends-on "helm-git")
+(depends-on "helm-gtags")
 (depends-on "helm-ls-git")
 (depends-on "helm-projectile")
 (depends-on "helm-projectile-all")
