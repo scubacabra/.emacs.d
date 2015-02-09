@@ -7,6 +7,7 @@
 (cask-initialize)
 ;; pallet for cask management
 (require 'pallet)
+(pallet-mode t)
 
 (when (memq window-system '(mac ns))
   (exec-path-from-shell-initialize))
