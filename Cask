@@ -84,6 +84,7 @@
 (depends-on "smartparens")
 (depends-on "stripe-buffer")
 (depends-on "tangotango-theme")
+(depends-on "web-beautify")
 (depends-on "web-mode")
 (depends-on "wgrep")
 (depends-on "wgrep-ag")
