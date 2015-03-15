@@ -126,6 +126,12 @@
 ;; clojure
 (require 'jacobo/clojure)
 
+;; smart mode line
+(require 'jacobo/smart-mode-line)
+
+;; rainbow-delimiters-mode
+(require 'jacobo/rainbow-mode-delimiters)
+
 ;; ido vertical mode
 (ido-vertical-mode t)
 
