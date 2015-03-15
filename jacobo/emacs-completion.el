@@ -28,7 +28,7 @@
 ;; to expand when in a snippet-mode
 ;; (global-set-key (kbd "M-/") 'hippie-expand)
 
-(global-company-mode)
+(add-hook 'after-init-hook 'global-company-mode)
 (global-set-key (kbd "M-/") 'company-complete)
 (global-set-key (kbd "C-M-y") 'company-yasnippet)
 

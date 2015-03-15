@@ -14,6 +14,7 @@
 (depends-on "company")
 (depends-on "clojure-mode")
 (depends-on "clojure-mode-extra-font-locking")
+(depends-on "company")
 (depends-on "dash")
 (depends-on "deferred")
 (depends-on "dired+")
