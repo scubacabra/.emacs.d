@@ -48,7 +48,7 @@
 
 ;; Use M-w for copy-line if no active region
 (global-set-key (kbd "M-w") 'save-region-or-current-line)
-(global-set-key (kbd "M-W") '(lambda () (interactive) (save-region-or-current-line 1)))
+(global-set-key (kbd "M-s-w") '(lambda () (interactive) (save-region-or-current-line 1)))
 
 ;; Make shell more convenient, and suspend-frame less
 (global-set-key (kbd "C-z") 'shell)
