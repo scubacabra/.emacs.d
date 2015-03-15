@@ -66,6 +66,7 @@
 (depends-on "org")
 (depends-on "org-bullets")
 (depends-on "pallet")
+(depends-on "paradox")
 (depends-on "pcache")
 (depends-on "pkg-info")
 (depends-on "popup")
