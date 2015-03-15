@@ -46,6 +46,10 @@
 (setq auto-save-file-name-transforms
       `((".*" ,(expand-file-name "autosaves/" dotfiles-dir) t)))
 
+;; custom-set-variables to their own file
+(setq custom-file "~/.emacs.d/custom.el")
+(load custom-file 'noerror)
+
 ;; load custom modes I like
 (require 'load-custom-modes)
 
@@ -62,19 +66,4 @@
 (set-register ?b '(file . "~/.bashrc"))
 
 (provide 'init)
-;; init.el ends here
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(flycheck-c/c++-googlelint-executable "/usr/local/bin/cpplint")
- '(flycheck-googlelint-filter "-whitespace,+whitespace/braces")
- '(flycheck-googlelint-verbose "3")
- '(safe-local-variable-values (quote ((eval progn (message "hello")) (eval message "hello") (eval progn (allout-hide-bodies) (beginning-of-buffer) (allout-hide-current-subtree))))))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
+;;; init.el ends here
