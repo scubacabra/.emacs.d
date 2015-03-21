@@ -7,3 +7,5 @@ tramp
 %backup%~
 ac-*.dat
 javadoc-cache
+custom.el
+projectile-bookmarks.eld
