@@ -135,5 +135,8 @@
 ;; ido vertical mode
 (ido-vertical-mode t)
 
+;; whitespace butler
+(ws-butler-mode t)
+
 (provide 'jacobo)
 ;;; jacobo.el ends here

@@ -91,6 +91,7 @@
 (depends-on "wgrep")
 (depends-on "wgrep-ag")
 (depends-on "wgrep-helm")
+(depends-on "ws-butler")
 (depends-on "yaml-mode")
 (depends-on "yasnippet")
 (depends-on "zenburn-theme")
