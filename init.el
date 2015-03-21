@@ -14,21 +14,13 @@
                     (or (buffer-file-name) load-file-name)))
 
 ;; setup path to dependencies
-(setq jacobo (expand-file-name "jacobo" dotfiles-dir))
-(setq plugins (expand-file-name "plugins" dotfiles-dir))
-(setq defuns-dir (expand-file-name "defuns" dotfiles-dir))
+(setq lisp (expand-file-name "lisp" dotfiles-dir))
+(setq defuns-dir (expand-file-name "defuns" lisp))
+(setq jacobo (expand-file-name "jacobo" lisp))
 
 ;; set up load path
-(add-to-list 'load-path dotfiles-dir)
+(add-to-list 'load-path lisp)
 (add-to-list 'load-path jacobo)
-(add-to-list 'load-path plugins)
-(let ((default-directory plugins))
-  (normal-top-level-add-subdirs-to-load-path))
-
-;; add external projects to load-path TODO
-;; (dolist (project (directory-files plugins t "\\w+"))
-;;   (when (file-directory-p project)
-;;     (add-to-list 'load-path project)))
 
 ;; add defuns in external library in
 (dolist (file (directory-files defuns-dir t "\\w+"))
@@ -49,21 +41,6 @@
 
 ;; load up my cust file to load up everything else
 (require 'jacobo)
-
-;; load custom modes I like
-(require 'load-custom-modes)
-
-;; set-up keybindings
-(require 'key-bindings)
-
-;; set-up appearance
-(require 'appearance)
-
-;; load theme of choice
-(load-theme 'zenburn t)
-
-(set-register ?e '(file . "~/.emacs.d/jacobo.el"))
-(set-register ?b '(file . "~/.bashrc"))
 
 (provide 'init)
 ;;; init.el ends here

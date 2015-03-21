@@ -1,3 +1,5 @@
+(require 'key-bindings)
+
 (require 'package)
 (add-to-list 'package-archives
              '("melpa" . "http://melpa.milkbox.net/packages/") t)
@@ -49,9 +51,6 @@
 
 ;; grails-projectile-mode
 (require 'jacobo/grails)
-
-;; java-mode plus
-(require 'jacobo/java-mode)
 
 ;; configure extras on magit
 (require 'jacobo/magit)
@@ -117,9 +116,6 @@
 ;; git-gutter mode
 (require 'jacobo/git-gutter-mode)
 
-;; zygospore
-(global-set-key (kbd "C-x 1") 'zygospore-toggle-delete-other-windows)
-
 ;; smartparens
 (require 'jacobo/smartparens-setup)
 
@@ -132,14 +128,23 @@
 ;; rainbow-delimiters-mode
 (require 'jacobo/rainbow-mode-delimiters)
 
-;; ido vertical mode
-(ido-vertical-mode t)
+(require 'appearance)
+
+;; simple modes turned on
+;; zygospore
+(global-set-key (kbd "C-x 1") 'zygospore-toggle-delete-other-windows)
+
+(transient-mark-mode 1)
+(delete-selection-mode 1)
 
 ;; whitespace butler
 (ws-butler-mode t)
 
 ;; aggressive indent
 (global-aggressive-indent-mode 1)
+
+;; answer questions with y or n
+(fset 'yes-or-no-p 'y-or-n-p)
 
 (provide 'jacobo)
 ;;; jacobo.el ends here

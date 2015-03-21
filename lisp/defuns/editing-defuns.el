@@ -1,22 +1,5 @@
 ;; Basic text editing defuns
 
-(defun move-line-down ()
-  (interactive)
-  (let ((col (current-column)))
-    (save-excursion
-      (forward-line)
-      (transpose-lines 1))
-    (forward-line)
-    (move-to-column col)))
-
-(defun move-line-up ()
-  (interactive)
-  (let ((col (current-column)))
-    (save-excursion
-      (forward-line)
-      (transpose-lines -1))
-    (move-to-column col)))
-
 (defun new-line-below ()
   (interactive)
   (if (eolp)
@@ -70,15 +53,6 @@ region-end is used. Adds the duplicated text to the kill ring."
     (newline)
     (forward-char -1))
   (duplicate-region num (point-at-bol) (1+ (point-at-eol))))
-
-(defun yank-indented ()
-  (interactive)
-  (let ((start (point)))
-    (yank)
-    (indent-region start (point))))
-
-;; define as yank-command for delsel.el
-(put 'yank-indented 'delete-selection 'yank-indented)
 
 ;; toggle quotes
 
@@ -165,20 +139,6 @@ region-end is used. Adds the duplicated text to the kill ring."
   (back-to-indentation)
   (kill-line))
 
-(defun back-to-indentation-or-beginning ()
-   (interactive)
-   (if (or (looking-back "^\s*")
-           (eq last-command 'back-to-indentation-or-beginning))
-       (beginning-of-line)
-     (back-to-indentation)))
-
-(defun camelize-buffer ()
-  (interactive)
-  (goto-char 0)
-  (ignore-errors
-    (replace-next-underscore-with-camel 0))
-  (goto-char 0))
-
 ;; kill all comments in buffer
 (defun comment-kill-all ()
   (interactive)
@@ -213,15 +173,6 @@ region-end is used. Adds the duplicated text to the kill ring."
       (capitalize-word 1)
       (setq arg (1- arg)))))
 
-(defun snakeify-current-word ()
-  (interactive)
-  (er/mark-word)
-  (let* ((beg (region-beginning))
-         (end (region-end))
-         (current-word (buffer-substring-no-properties beg end))
-         (snakified (snake-case current-word)))
-    (replace-string current-word snakified nil beg end)))
-
 (defun transpose-params ()
   "Presumes that params are in the form (p, p, p) or {p, p, p} or [p, p, p]"
   (interactive)
@@ -255,16 +206,4 @@ region-end is used. Adds the duplicated text to the kill ring."
      ((looking-back ")\\|}\\|\\]") (backward-list))
      (t (backward-char)))))
 
-(defun zap-to-char-exclusive (arg char)
-  "Kill up to, but not including ARGth occurrence of CHAR.
-Case is ignored if `case-fold-search' is non-nil in the current buffer.
-Goes backward if ARG is negative; error if CHAR not found."
-  (interactive "p\ncZap to char (exclusive): ")
-  ;; Avoid "obsolete" warnings for translation-table-for-input.
-  (with-no-warnings
-    (if (char-table-p translation-table-for-input)
-        (setq char (or (aref translation-table-for-input char) char))))
-  (kill-region (point) (progn
-                         (search-forward (char-to-string char) nil nil arg)
-                         (goto-char (if (> arg 0) (1- (point)) (1+ (point))))
-                         (point))))
+

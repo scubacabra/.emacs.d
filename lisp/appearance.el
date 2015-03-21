@@ -1,3 +1,12 @@
+;;; appearance.el --- All appearance related thigs
+;;
+;;; Commentary:
+;; Turn on appearance related modes
+;; Set up how emacs looks
+;; Load themes
+;;
+;;; Code:
+
 (setq visible-bell t
       font-lock-maximum-decoration t
       color-theme-is-global t
@@ -49,4 +58,8 @@
 ;; Make ediff default to in frame ediff not new frame
 (setq ediff-window-setup-function 'ediff-setup-windows-plain)
 
+;; gimme that zenburn
+(load-theme 'zenburn t)
+
 (provide 'appearance)
+;;; appearance.el ends here
