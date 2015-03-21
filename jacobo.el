@@ -138,5 +138,8 @@
 ;; whitespace butler
 (ws-butler-mode t)
 
+;; aggressive indent
+(global-aggressive-indent-mode 1)
+
 (provide 'jacobo)
 ;;; jacobo.el ends here
