@@ -58,4 +58,8 @@
 
 (helm-mode 1)
 
+;;; flycheck integration
+(eval-after-load 'flycheck
+  '(define-key flycheck-mode-map (kbd "C-c ! h") 'helm-flycheck))
+
 (provide 'jacobo/helm-mode)

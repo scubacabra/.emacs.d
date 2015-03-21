@@ -42,6 +42,7 @@
 (depends-on "groovy-mode")
 (depends-on "helm")
 (depends-on "helm-descbinds")
+(depends-on "helm-flycheck")
 (depends-on "helm-gist")
 (depends-on "helm-git")
 (depends-on "helm-gtags")
