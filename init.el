@@ -33,7 +33,7 @@
 
 ;; write autosaves to their own directory
 (setq auto-save-file-name-transforms
-      `((".*" ,(expand-file-name "autosaves/" dotfiles-dir) t)))
+      `((".*" ,(expand-file-name "backups" dotfiles-dir) t)))
 
 ;; custom-set-variables to their own file
 (setq custom-file "~/.emacs.d/custom.el")
