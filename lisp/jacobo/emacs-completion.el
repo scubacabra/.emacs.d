@@ -1,5 +1,6 @@
 (require 'yasnippet)
 (require 'company)
+(require 'company-dabbrev-code)
 
 (setq yas-snippet-dirs
       '("~/.emacs.d/snippets"
@@ -24,12 +25,15 @@
 	try-expand-list
 	try-expand-line))
 
-(global-set-key (kbd "TAB") 'hippie-expand)
+(global-set-key (kbd "M-/") 'hippie-expand)
 ;; to expand when in a snippet-mode
 ;; (global-set-key (kbd "M-/") 'hippie-expand)
 
 (add-hook 'after-init-hook 'global-company-mode)
-(global-set-key (kbd "M-/") 'company-complete)
+(global-set-key (kbd "TAB") 'company-complete)
 (global-set-key (kbd "C-M-y") 'company-yasnippet)
+
+(add-to-list 'company-dabbrev-code-modes 'groovy-mode)
+(add-hook 'after-init-hook 'global-company-mode)
 
 (provide 'jacobo/emacs-completion)
