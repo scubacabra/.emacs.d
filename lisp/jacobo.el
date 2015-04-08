@@ -130,6 +130,7 @@
 
 (require 'appearance)
 
+(require 'registers)
 ;; simple modes turned on
 ;; zygospore
 (global-set-key (kbd "C-x 1") 'zygospore-toggle-delete-other-windows)
@@ -138,10 +139,11 @@
 (delete-selection-mode 1)
 
 ;; whitespace butler
-(ws-butler-mode t)
+(ws-butler-global-mode t)
 
 ;; aggressive indent
 (global-aggressive-indent-mode 1)
+(add-to-list 'aggressive-indent-excluded-modes 'groovy-mode)
 
 ;; answer questions with y or n
 (fset 'yes-or-no-p 'y-or-n-p)
