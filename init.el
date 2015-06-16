@@ -39,6 +39,7 @@
 (setq custom-file "~/.emacs.d/custom.el")
 (load custom-file 'noerror)
 
+(setq ns-use-srgb-colorspace nil)
 ;; load up my cust file to load up everything else
 (require 'jacobo)
 
