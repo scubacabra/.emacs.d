@@ -144,6 +144,7 @@
 ;; aggressive indent
 (global-aggressive-indent-mode 1)
 (add-to-list 'aggressive-indent-excluded-modes 'groovy-mode)
+(add-to-list 'aggressive-indent-excluded-modes 'scala-mode)
 
 ;; answer questions with y or n
 (fset 'yes-or-no-p 'y-or-n-p)
