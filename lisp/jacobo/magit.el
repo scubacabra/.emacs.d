@@ -66,6 +66,7 @@
 ;; magit add remote
 (define-key magit-status-mode-map (kbd "C-x ar") 'magit-add-remote)
 
+(setq magit-last-seen-setup-instructions "1.4.0")
 ;; magit gh pull 
 (eval-after-load 'magit
   '(define-key magit-mode-map "#gg"
