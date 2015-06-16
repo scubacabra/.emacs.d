@@ -8,8 +8,8 @@
 
 ;; mac friendly font, different ways to set up fonts
 (if (daemonp)
-    (setq default-frame-alist '((font . "Monaco-16")))
-    (set-face-attribute 'default nil :font "Monaco-16"))
+    (setq default-frame-alist '((font . "Meslo LG S for Powerline-16")))
+  (set-face-attribute 'default nil :font "Meslo LG S for Powerline-16"))
 
 ;; get PATH from shell
 (exec-path-from-shell-copy-env "JAVA_HOME")
@@ -35,5 +35,8 @@
 
 ;; Use aspell for spell checking: brew install aspell --lang=en
 (setq ispell-program-name "/usr/local/bin/aspell")
+
+;; use gnu core utils
+(setq insert-directory-program (executable-find "gls"))
 
 (provide 'mac)
