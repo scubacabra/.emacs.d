@@ -40,6 +40,9 @@
 (load custom-file 'noerror)
 
 (setq ns-use-srgb-colorspace nil)
+
+(put 'narrow-to-region 'disabled nil)
+
 ;; load up my cust file to load up everything else
 (require 'jacobo)
 
