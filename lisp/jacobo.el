@@ -149,5 +149,7 @@
 ;; answer questions with y or n
 (fset 'yes-or-no-p 'y-or-n-p)
 
+(require 'jacobo/sql-setup)
+
 (provide 'jacobo)
 ;;; jacobo.el ends here
