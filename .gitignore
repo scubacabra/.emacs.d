@@ -9,3 +9,5 @@ ac-*.dat
 javadoc-cache
 custom.el
 projectile-bookmarks.eld
+ensime/
+recentf
