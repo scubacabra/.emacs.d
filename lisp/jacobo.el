@@ -141,6 +141,9 @@
 ;; whitespace butler
 (ws-butler-global-mode t)
 
+;; scala and ensime
+(require 'jacobo/scala)
+
 ;; aggressive indent
 (global-aggressive-indent-mode 1)
 (add-to-list 'aggressive-indent-excluded-modes 'groovy-mode)
