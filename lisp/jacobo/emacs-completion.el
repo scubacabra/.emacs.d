@@ -30,7 +30,7 @@
 ;; (global-set-key (kbd "M-/") 'hippie-expand)
 
 (add-hook 'after-init-hook 'global-company-mode)
-(global-set-key (kbd "TAB") 'company-complete)
+(global-set-key (kbd "TAB") #'company-indent-or-complete-common)
 (global-set-key (kbd "C-M-y") 'company-yasnippet)
 
 (add-to-list 'company-dabbrev-code-modes 'groovy-mode)
