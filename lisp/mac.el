@@ -8,8 +8,8 @@
 
 ;; mac friendly font, different ways to set up fonts
 (if (daemonp)
-    (setq default-frame-alist '((font . "Meslo LG S for Powerline-16")))
-  (set-face-attribute 'default nil :font "Meslo LG S for Powerline-16"))
+    (setq default-frame-alist '((font . "Hack-15")))
+  (set-face-attribute 'default nil :font "Hack-15"))
 
 ;; get PATH from shell
 (exec-path-from-shell-copy-env "JAVA_HOME")
